@@ -139,8 +139,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/kimtrong/learning/projects/vutajob/src/vutajob/js/app.js */"./src/vutajob/js/app.js");
-module.exports = __webpack_require__(/*! /home/kimtrong/learning/projects/vutajob/src/vutajob/sass/app.scss */"./src/vutajob/sass/app.scss");
+__webpack_require__(/*! /home/kimtrong/learning/projects/vuta-host/vutajob/src/vutajob/js/app.js */"./src/vutajob/js/app.js");
+module.exports = __webpack_require__(/*! /home/kimtrong/learning/projects/vuta-host/vutajob/src/vutajob/sass/app.scss */"./src/vutajob/sass/app.scss");
 
 
 /***/ })
