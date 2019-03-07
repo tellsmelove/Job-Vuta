@@ -1,0 +1,143 @@
+#header{
+    background-color: #e74c3c;
+    background-image: linear-gradient(-45deg, #e74c3c, #e74c3c,#c0392b);
+    a{
+        display: block;
+        padding: 8px 10px;
+        color: #fff;
+        @include bg-color($nocolor, #c0392b);
+    }
+}
+.header{
+    &-logo{
+        border-right: 1px solid rgba(#e66c5f, .4);
+        a{
+            @include bg-color($nocolor!important, $nocolor!important);
+            position: relative;
+            img{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                @include max-md{
+                    width: 80px;
+                }
+            }
+        }
+    }
+    &-sologan{
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        padding: 5px 15px;
+        border-top: 1px solid rgba(#c0392b, .7);
+        @include md{
+            border-left: 1px solid rgba(#c0392b, .7);
+            border-right: 1px solid rgba(#e66c5f, .4);
+        }
+        @include max-md{
+            font-size: 10pt;
+        }
+    }
+    &-control{
+        border-left: 1px solid rgba(#c0392b, .7);
+        li{
+            @include max-md{
+                border-bottom: 1px solid rgba(#e66c5f, .4);
+            }
+            &:first-child{
+                @include md{
+                    border-bottom: 1px solid rgba(#e66c5f, .4);
+                }
+                @include max-md{
+                    border-right: 1px solid rgba(#e66c5f, .4);
+                }
+            }
+            &:last-child{
+                @include md{
+                    border-top: 1px solid rgba(#c0392b, .7);
+                }
+                @include max-md{
+                    border-left: 1px solid rgba(#c0392b, .7);
+                    border-right: 1px solid rgba(#e66c5f, .4);
+                }
+            }
+            @include max-lg{
+                flex: 1;
+                height: 50%;
+                font-size: 10pt;
+            }
+            @include max-md{
+                @include max-md{
+                    flex: 1 1 auto;
+                }
+            }
+        }
+        a{
+            text-align: center;
+            @include md{
+                .fa{
+                    display: none;
+                }
+            }
+            @include max-md{
+                font-size: 10pt;
+            }
+        }
+    }
+    &-toggle{
+        border-left: 1px solid rgba(#c0392b, .7);
+        a{
+            font-size: 10pt;
+        }
+    }
+    &-navbar{
+        border-left: 1px solid rgba(#c0392b, .7);
+        border-bottom: 1px solid rgba(#e66c5f, .4);
+        border-right: 1px solid rgba(#e66c5f, .4);
+        @include md{
+            text-align: center;
+        }
+        @include max-lg{
+            font-size: 10pt
+        }
+        @include max-md{
+            border-top: 0 solid rgba(#c0392b, .7);
+            border-width: 0;
+            overflow-y: hidden;
+            height: 0px;
+            transition: .4s ease all;
+            border-width: 0;
+            ul{
+                padding: 5px;
+                border-radius: 5px;
+                background-color: rgba(#c0392b, .3);
+                li{
+                    &:not(:last-child){
+                        border-bottom: 1px solid #c0392b;
+                        border-right: 0;
+                    }
+                    a{
+                        &::before{
+                            content: '\f0da';
+                            font-family: Fontawesome;
+                            margin-right: 5px;
+                        }
+                        &:hover{
+                            background-image: linear-gradient(to right, #c0392b,  #e66c5f);
+                        }
+                    }
+                }
+            }
+        }
+        li{
+            flex: 1 1 auto;
+        }
+        li:not(:last-child){
+            border-right: 1px solid rgba(#e66c5f, .4);
+        }
+        li:not(:first-child){
+            border-left: 1px solid rgba(#c0392b, .7);
+        }
+    }
+}

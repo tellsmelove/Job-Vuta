@@ -1,0 +1,29 @@
+.bannerqc {
+    @include max-sm {
+        display: none;
+    }
+}
+.job-manage {
+    background-color: #f5f5f5;
+    &__list {
+        background-color: #fff;
+        &:hover {
+            background-color: rgb(231, 233, 211);
+            transition: .5s ease-out all;
+        }
+    }
+}
+.company-link, .job-link {
+    color: #000000;
+    &:hover {
+        color: orange;
+    }
+}
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.breadcrumb {
+    background-color: #fff;
+}
