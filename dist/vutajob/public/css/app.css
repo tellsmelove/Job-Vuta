@@ -330,6 +330,52 @@ input[type=number] {
   background-color: #fff;
 }
 
+.job-company {
+  background-color: #f5f5f5;
+}
+.job-company__title {
+  font-size: 15pt;
+  color: #c0392b;
+}
+.job-company__title:hover {
+  color: orangered;
+}
+.job-company__listjob {
+  color: gray;
+}
+.job-company__listjob:hover {
+  color: #2f3640;
+}
+.job-company__listjob::before {
+  content: "\F0DA";
+  font-family: Fontawesome;
+  margin-right: 5px;
+}
+.job-company__link {
+  color: #000;
+}
+.job-company__link:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.card-thumb-company {
+  flex: 5;
+  overflow: hidden;
+  position: relative;
+  min-height: 140px;
+}
+.card-thumb-company img {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.card-body-company {
+  flex: 1;
+}
+
 body {
   color: #000;
 }
@@ -529,6 +575,9 @@ body {
 @media screen and (max-width: 575px) {
   .bannerqc {
     display: none;
+  }
+  .card-thumb-company {
+    height: 240px;
   }
   .post-title-sm {
     text-align: center;
