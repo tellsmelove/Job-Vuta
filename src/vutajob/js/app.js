@@ -1,4 +1,6 @@
 $(document).ready(() => {
+    require('./swiper');
+
     var getToggleAside = document.querySelector('[data-toggle-menu]');
     var eToggle = getToggleAside.dataset.toggleMenu;
 

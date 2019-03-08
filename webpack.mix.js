@@ -62,6 +62,7 @@ function copy(name) {
         'node_modules/bootstrap/dist/css/bootstrap.min.css.map',
         'node_modules/font-awesome/css/font-awesome.css',
         'node_modules/font-awesome/css/font-awesome.css.map',
+        'node_modules/swiper/dist/css/swiper.min.css'
     ], 'dist/' + name + '/public/css')
         .copy('node_modules/font-awesome/fonts/*', 'dist/' + name + '/public/fonts')
         .copy([
@@ -71,6 +72,7 @@ function copy(name) {
             'node_modules/jquery/dist/jquery.min.map',
             'node_modules/popper.js/dist/umd/popper.min.js',
             'node_modules/popper.js/dist/umd/popper.min.js.map',
+            'node_modules/swiper/dist/js/swiper.min.js'
         ], 'dist/' + name + '/public/js')
 }
 

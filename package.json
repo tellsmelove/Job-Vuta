@@ -34,5 +34,7 @@
     "sass-loader": "7.*",
     "vue-template-compiler": "^2.6.8"
   },
-  "dependencies": {}
+  "dependencies": {
+    "swiper": "^4.5.0"
+  }
 }

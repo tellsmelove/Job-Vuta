@@ -1,0 +1,116 @@
+.card-img-top {
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    min-height: 100%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.card-thumb{
+    flex: 5;
+    overflow: hidden;
+    position: relative;
+    min-height: 300px;
+    img{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+}
+.card-body{
+    flex: 1;
+}
+.info-list{
+    li{
+        padding: 5px 0;
+        &:not(:last-child){
+            border-bottom: 1px dotted #e74c3c;
+        }
+
+    }
+    &__form-name{
+        font-weight: bold;
+        &::after{
+            content: ':';
+        }  
+    }
+}
+.detailperson {
+    &__content:last-child {
+        border-bottom: 1px solid #dee2e6;
+    }
+    &__end {
+        border-right: 1px solid #dee2e6;
+        @include max-sm {
+            border-right: none;
+            border-bottom: 1px solid #dee2e6;
+        }
+    }
+    &__bannerqc {
+        @include max-lg {
+            display: none;
+        }
+    }
+    &__link {
+        display: block;
+        background-color: #e74c3c;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 4px;
+        &:hover {
+            box-shadow: 3px 3px 3px #dee2e6;
+            transition: .3s ease-out all;
+            color: var(--blue);
+        }
+    }
+    &__content {
+        ul>li {
+            &::before {
+                content: '\f054';
+                font-family: Fontawesome;
+                margin-right: 5px;
+                font-size: 9pt;
+        }
+        }
+
+    }
+}
+.portfolio {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px #dee2e6;
+}
+.title-skill {
+    display: block;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 4px 8px;
+    font-weight: bold;
+}
+
+ .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }

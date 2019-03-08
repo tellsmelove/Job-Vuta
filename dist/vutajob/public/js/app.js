@@ -91,9 +91,11 @@
   !*** ./src/vutajob/js/app.js ***!
   \*******************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 $(document).ready(function () {
+  __webpack_require__(/*! ./swiper */ "./src/vutajob/js/swiper.js");
+
   var getToggleAside = document.querySelector('[data-toggle-menu]');
   var eToggle = getToggleAside.dataset.toggleMenu;
   var menu_target = document.querySelector(eToggle);
@@ -117,6 +119,45 @@ $(document).ready(function () {
     menu_target.classList.toggle('active');
     console.log(menu_target.classList[menu_target.classList.length - 1] == "active");
   });
+});
+
+/***/ }),
+
+/***/ "./src/vutajob/js/swiper.js":
+/*!**********************************!*\
+  !*** ./src/vutajob/js/swiper.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+    769: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    440: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    }
+  }
 });
 
 /***/ }),
