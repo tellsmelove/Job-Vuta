@@ -45,6 +45,9 @@
             background-color: #c0392b;
             color: #fff;
         }
+        @include max-sm {
+            padding: 5px 10px;
+        }
     }
      &-link-loginfb {
         background-color: #3865ea;
@@ -56,6 +59,9 @@
         &:hover {
             background-color: #1f3a8a;
             color: #fff;
+        }
+        @include max-sm {
+            padding: 5px 10px;
         }
     }
     
@@ -93,6 +99,9 @@
         background-color: #fafafa;
         border: 1px solid #efefef;
         border-radius: 3px;
+        @include max-sm {
+            width: auto;
+        }
     }
 }
 .list-text {
