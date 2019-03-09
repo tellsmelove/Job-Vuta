@@ -6,6 +6,7 @@
 @import './detailjob';
 @import './person';
 @import './detailperson';
+@import './login';
 body{
     color: #000;
 }
@@ -141,5 +142,85 @@ body{
     color: #fff;
     &:hover {
         color: #95afc0;
+    }
+}
+.input-seach {
+    position: relative;
+    .li-briefcase {
+        position: absolute;
+        left: 13px;
+        top: 6px;
+        &::before {
+            content: '\f0b1';
+            font-family: Fontawesome;
+            margin-right: 3px;
+            font-size: 22px;
+            color: #e74c3c;
+        }
+    }
+    .li-hammer-wrench {
+        position: absolute;
+        z-index: 99;
+        left: 15px;
+        top: 6px;
+        &::before {
+            content: '\f0ad';
+            font-family: Fontawesome;
+            margin-right: 5px;
+            font-size: 22px;
+            color: #e74c3c;
+        }
+    }
+    .li-local {
+        position: absolute;
+        z-index: 99;
+        left: 15px;
+        top: 6px;
+        &::before {
+            content: '\f041';
+            font-family: Fontawesome;
+            margin-right: 5px;
+            font-size: 22px;
+            color: #e74c3c;
+        }
+    }
+    .li-seach {
+        position: absolute;
+        z-index: 99;
+        left: 15px;
+        top: 8px;
+        &::before {
+            content: '\f002';
+            font-family: Fontawesome;
+            margin-right: 5px;
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+    input {
+        padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+        
+    }
+    &-link {
+        display: block;
+        padding: 0.6rem 0.5rem 0.6rem 2.5rem;
+        border: 1px solid #dee2e6;
+        background-color: #e74c3c;
+        color: #fff;
+        font-weight: bold;
+        margin-top: 0px;
+        &:hover {
+            background-color:   #c0392b;
+            color: #fff;
+        }
+    }
+}
+.input-select{
+    background-color: #fff!important;
+    padding: 0.75rem 0.5rem 0.75rem 2.5rem;
+}
+.banner-slide {
+    @include max-sm {
+        display: none;
     }
 }

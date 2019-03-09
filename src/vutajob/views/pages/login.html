@@ -1,0 +1,52 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<section class="login-page">
+    <div class="container">
+        <div class="d-flex flex-wrap flex-row">
+            <div class="col-lg-7 login-page-boxleft">
+                <div class="mx-2 py-4">
+                    <h2 class="login-page-title">Đăng nhập ứng viên</h2>
+                    <ul class="nolist">
+                        <li><a href="#">Tiếp cận hàng triệu công việc hoàn toàn miễn phí</a></li>
+                        <li><a href="#">Ứng tuyển nhanh chóng, dễ dàng</a></li>
+                        <li><a href="#">Nhận bản tin công việc phù hợp định kỳ</a></li>
+                        <li><a href="#">Nâng cao cơ hội tìm việc với chương trình ứng viên năng động </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-5 login-page-boxright text-center py-3">
+                <div class="mx-2">
+                    <a href="#"><img src="{{img('logo.png')}}" alt=""> </a>
+                </div>
+                <div class="input-login">
+                    <span><i class="li-user"></i></span>
+                    <input class="" autocomplete="off" placeholder="Tài khoản ứng viên">
+                </div>
+                <div class="input-login mt-2">
+                    <span><i class="li-key"></i></span>
+                    <input class="" autocomplete="off" placeholder="Tài khoản ứng viên">
+                </div>
+                <div class="mt-2">
+                    <a href="#" class="login-page-link-login">Đăng nhập</a>
+                </div>
+                <div class="row mt-2">
+                    <hr width="50"><span class="text-opacity">Hoặc</span><hr width="50">
+                    
+                </div>
+                <div class="mt-2">
+                    <a href="#" class="login-page-link-loginfb">Đăng nhập qua Facebook</a>
+                </div>
+                <div class="mt-2">
+                    <span class="text-opacity">Quên mật khẩu</span>
+                </div>
+                <div class="row text-center justify-content-center py-2">
+                    <p>Bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

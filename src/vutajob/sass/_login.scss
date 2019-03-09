@@ -1,0 +1,100 @@
+.login-page {
+    background-color: #ff5341;
+    min-height: 100vh;
+    padding-top: 2rem;
+    &-title {
+         color: #c0392b;
+    }
+    &-boxleft {
+        background-color: #fff;
+        border-radius: 6px;
+        border-right: 2px solid #ff5341;
+        &:hover {
+            box-shadow: 2px 2px 2px #c0392b;
+            transition: .3s ease-out all;
+        }
+        a {
+            color: #c0392b;
+            font-size: 13pt;
+            &::before {
+                content: '\f0da';
+                font-family: Fontawesome;
+                margin-right: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+    &-boxright {
+        background-color: #fff;
+        border-radius: 6px;
+        img {
+            background-color: red;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .text-opacity {
+            opacity: 0.6;
+        }
+    }
+    &-link-login {
+        background-color: #ff5341;
+        color: #fff;
+        font-weight: bold;
+        padding: 6px 107px;
+        width: 200px;
+        border-radius: 4px;
+        &:hover {
+            background-color: #c0392b;
+            color: #fff;
+        }
+    }
+     &-link-loginfb {
+        background-color: #3865ea;
+        color: #fff;
+        font-weight: bold;
+        padding: 6px 51px;
+        width: 200px;
+        border-radius: 4px;
+        &:hover {
+            background-color: #1f3a8a;
+            color: #fff;
+        }
+    }
+    
+}
+.input-login {
+    position: relative;
+    .li-user {
+        position: absolute;
+        top: 2px;
+        margin-left: 6px;
+        &::before {
+            content: '\f2bd';
+            font-family: Fontawesome;
+            margin-right: 3px;
+            font-size: 22px;
+            color: #e74c3c;
+        }
+    }
+    .li-key {
+        position: absolute;
+        top: 2px;
+        margin-left: 6px;
+        &::before {
+            content: '\f084';
+            font-family: Fontawesome;
+            margin-right: 3px;
+            font-size: 22px;
+            color: #e74c3c;
+        }
+    }
+    input {
+        width: 300px;
+        margin-bottom: 5px;
+        padding: 0.25rem 0 0.25rem 2.5rem;
+        background-color: #fafafa;
+        border: 1px solid #efefef;
+        border-radius: 3px;
+    }
+
+}

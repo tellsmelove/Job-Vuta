@@ -1,11 +1,11 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-person', {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.pagination-person',
         clickable: true,
     },
     navigation: {
@@ -27,4 +27,19 @@ var swiper = new Swiper('.swiper-container', {
         },
 
     }
+});
+
+var swiper = new Swiper('.swiper-main', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: '.pagination-main',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 5000,
+    },
 });

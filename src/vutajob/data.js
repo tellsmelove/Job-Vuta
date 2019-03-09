@@ -19,5 +19,19 @@ module.exports = {
                 "dsadasda"
             ]
         },
+    ],
+    selects: [
+        "Bán hàng",
+        "Biên Tập/Báo Chí",
+        "Bảo Hiểm",
+        "Bảo Vệ",
+        "Bưu Chính",
+    ],
+    local: [
+        "TP HCM",
+        "Hà Nội",
+        "BR-VT",
+        "Nha Trang",
+        "Đồng Nai",
     ]
 }

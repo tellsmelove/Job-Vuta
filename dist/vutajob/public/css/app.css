@@ -580,6 +580,106 @@ input[type=number] {
   align-items: center;
 }
 
+.login-page {
+  background-color: #ff5341;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+.login-page-title {
+  color: #c0392b;
+}
+.login-page-boxleft {
+  background-color: #fff;
+  border-radius: 6px;
+  border-right: 2px solid #ff5341;
+}
+.login-page-boxleft:hover {
+  box-shadow: 2px 2px 2px #c0392b;
+  transition: 0.3s ease-out all;
+}
+.login-page-boxleft a {
+  color: #c0392b;
+  font-size: 13pt;
+}
+.login-page-boxleft a::before {
+  content: "\F0DA";
+  font-family: Fontawesome;
+  margin-right: 5px;
+  font-size: 16px;
+}
+.login-page-boxright {
+  background-color: #fff;
+  border-radius: 6px;
+}
+.login-page-boxright img {
+  background-color: red;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.login-page-boxright .text-opacity {
+  opacity: 0.6;
+}
+.login-page-link-login {
+  background-color: #ff5341;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 107px;
+  width: 200px;
+  border-radius: 4px;
+}
+.login-page-link-login:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+.login-page-link-loginfb {
+  background-color: #3865ea;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 51px;
+  width: 200px;
+  border-radius: 4px;
+}
+.login-page-link-loginfb:hover {
+  background-color: #1f3a8a;
+  color: #fff;
+}
+
+.input-login {
+  position: relative;
+}
+.input-login .li-user {
+  position: absolute;
+  top: 2px;
+  margin-left: 6px;
+}
+.input-login .li-user::before {
+  content: "\F2BD";
+  font-family: Fontawesome;
+  margin-right: 3px;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.input-login .li-key {
+  position: absolute;
+  top: 2px;
+  margin-left: 6px;
+}
+.input-login .li-key::before {
+  content: "\F084";
+  font-family: Fontawesome;
+  margin-right: 3px;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.input-login input {
+  width: 300px;
+  margin-bottom: 5px;
+  padding: 0.25rem 0 0.25rem 2.5rem;
+  background-color: #fafafa;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+}
+
 body {
   color: #000;
 }
@@ -692,6 +792,83 @@ body {
 .title-post:hover {
   color: #95afc0;
 }
+
+.input-seach {
+  position: relative;
+}
+.input-seach .li-briefcase {
+  position: absolute;
+  left: 13px;
+  top: 6px;
+}
+.input-seach .li-briefcase::before {
+  content: "\F0B1";
+  font-family: Fontawesome;
+  margin-right: 3px;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.input-seach .li-hammer-wrench {
+  position: absolute;
+  z-index: 99;
+  left: 15px;
+  top: 6px;
+}
+.input-seach .li-hammer-wrench::before {
+  content: "\F0AD";
+  font-family: Fontawesome;
+  margin-right: 5px;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.input-seach .li-local {
+  position: absolute;
+  z-index: 99;
+  left: 15px;
+  top: 6px;
+}
+.input-seach .li-local::before {
+  content: "\F041";
+  font-family: Fontawesome;
+  margin-right: 5px;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.input-seach .li-seach {
+  position: absolute;
+  z-index: 99;
+  left: 15px;
+  top: 8px;
+}
+.input-seach .li-seach::before {
+  content: "\F002";
+  font-family: Fontawesome;
+  margin-right: 5px;
+  font-size: 18px;
+  color: #fff;
+}
+.input-seach input {
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+}
+.input-seach-link {
+  display: block;
+  padding: 0.6rem 0.5rem 0.6rem 2.5rem;
+  border: 1px solid #dee2e6;
+  background-color: #e74c3c;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 0px;
+}
+.input-seach-link:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+.input-select {
+  background-color: #fff !important;
+  padding: 0.75rem 0.5rem 0.75rem 2.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .header-sologan {
     border-left: 1px solid rgba(192, 57, 43, 0.7);
@@ -710,6 +887,7 @@ body {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 767px) {
   .header-logo a img {
     width: 80px;
@@ -761,6 +939,7 @@ body {
     height: 150px;
   }
 }
+
 @media screen and (max-width: 991px) {
   .header-control li {
     flex: 1;
@@ -785,11 +964,13 @@ body {
     display: none;
   }
 }
+
 @media screen and (max-width: 767px) and (max-width: 767px) {
   .header-control li {
     flex: 1 1 auto;
   }
 }
+
 @media screen and (max-width: 575px) {
   .bannerqc {
     display: none;
@@ -811,7 +992,11 @@ body {
   .company-sm {
     text-align: center;
   }
+  .banner-slide {
+    display: none;
+  }
 }
+
 @media screen and (max-width: 1199px) {
   .content-company {
     border-left: 1px solid #dee2e6;
