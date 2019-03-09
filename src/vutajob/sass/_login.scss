@@ -7,15 +7,14 @@
     }
     &-boxleft {
         background-color: #fff;
-        border-radius: 6px;
-        border-right: 2px solid #ff5341;
         &:hover {
             box-shadow: 2px 2px 2px #c0392b;
             transition: .3s ease-out all;
         }
         a {
             color: #c0392b;
-            font-size: 13pt;
+            font-size: 15pt;
+            line-height: 2;
             &::before {
                 content: '\f0da';
                 font-family: Fontawesome;
@@ -26,7 +25,6 @@
     }
     &-boxright {
         background-color: #fff;
-        border-radius: 6px;
         img {
             background-color: red;
             border-radius: 4px;
