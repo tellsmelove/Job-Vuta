@@ -96,5 +96,9 @@
         border: 1px solid #efefef;
         border-radius: 3px;
     }
-
+}
+.list-text {
+    @include max-sm {
+        display: none;
+    }
 }

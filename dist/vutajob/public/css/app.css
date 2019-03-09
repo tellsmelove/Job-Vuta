@@ -986,6 +986,9 @@ body {
     border-right: none;
     border-bottom: 1px solid #dee2e6;
   }
+  .list-text {
+    display: none;
+  }
   .post-title-sm {
     text-align: center;
   }
