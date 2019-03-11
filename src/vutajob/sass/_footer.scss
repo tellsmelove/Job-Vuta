@@ -30,12 +30,12 @@
         height: 100%;
         @include max-lg {
             position: absolute;
-            height: 300px!important;
+            height: 250px!important;
         }
     }
 }
 .fanpage {
-    @include max-lg {
-        margin-top: 19rem;
+    @include max-sm {
+        margin-top: 16rem;
     }
 }

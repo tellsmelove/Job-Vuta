@@ -721,32 +721,16 @@ input[type=number] {
 .registe-page-title {
   color: #fff;
   background-color: #ff5341;
-  padding: 5px 48px;
+  padding: 5px 40px;
   font-size: 18pt;
   border-radius: 5px;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-.registe-page-boxleft {
-  background-color: #fff;
-}
-.registe-page-boxleft:hover {
-  box-shadow: 2px 2px 2px #c0392b;
-  transition: 0.3s ease-out all;
-}
-.registe-page-boxleft a {
-  color: #c0392b;
-  font-size: 15pt;
-  line-height: 2;
-}
-.registe-page-boxleft a::before {
-  content: "\F0DA";
-  font-family: Fontawesome;
-  margin-right: 5px;
-  font-size: 16px;
-}
 .registe-page-boxright {
   background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #dee2e6;
 }
 .registe-page-boxright img {
   background-color: red;
@@ -1038,6 +1022,34 @@ input[type=number] {
   background-color: #fff;
 }
 
+.list-detail-company {
+  border: 1px solid #dee2e6;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.listjob {
+  padding-bottom: 0.5rem;
+}
+.listjob-link {
+  background-color: #e74c3c;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.listjob-link:hover {
+  color: #fff;
+  background-color: #9a3b31;
+}
+.listjob-items {
+  color: #000;
+  font-size: 14pt;
+}
+
+.listjob:not(:last-child) {
+  border-bottom: 1px dotted #e74c3c;
+}
+
 body {
   color: #000;
 }
@@ -1246,7 +1258,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
   .header-logo a img {
     width: 80px;
   }
@@ -1309,10 +1321,7 @@ body {
   }
   .maps-son {
     position: absolute;
-    height: 300px !important;
-  }
-  .fanpage {
-    margin-top: 19rem;
+    height: 250px !important;
   }
   .bannerqc-detail {
     display: none;
@@ -1344,13 +1353,16 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) and (max-width: 767px) {
+@media screen and (max-width: 769px) and (max-width: 769px) {
   .header-control li {
     flex: 1 1 auto;
   }
 }
 
 @media screen and (max-width: 575px) {
+  .fanpage {
+    margin-top: 16rem;
+  }
   .bannerqc {
     display: none;
   }
@@ -1396,10 +1408,6 @@ body {
   }
   .registe-page img {
     display: none;
-  }
-  .registe-page-boxleft {
-    background-color: #ff5341;
-    border-right: none !important;
   }
   .login-master-page-link-login {
     padding: 5px 10px;
