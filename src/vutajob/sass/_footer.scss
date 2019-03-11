@@ -1,0 +1,41 @@
+#footer{
+    background-color: #e74c3c;
+    background-image: linear-gradient(-45deg, #e74c3c, #e74c3c,#c0392b);
+    color: #fff;
+    padding: 10px 20px;
+    a{
+        display: block;
+        padding: 8px 10px;
+        color: #fff;
+        @include bg-color($nocolor, #c0392b);
+        &::before {
+            content: '\f0da';
+            font-family: Fontawesome;
+            margin-right: 5px;
+        }
+    }
+    .title-footer {
+        font-weight: bold;
+        font-size: 17pt;
+    }
+}
+.maps {
+    position: relative;
+    min-height: 88%;
+    @include max-md {
+        // min-height: 300px!important;
+    }
+    &-son {
+        position: absolute;
+        height: 100%;
+        @include max-lg {
+            position: absolute;
+            height: 300px!important;
+        }
+    }
+}
+.fanpage {
+    @include max-lg {
+        margin-top: 19rem;
+    }
+}

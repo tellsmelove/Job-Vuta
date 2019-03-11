@@ -1,15 +1,9 @@
-.login-page {
+.login-master-page {
     background-color: #ff5341;
     min-height: 100vh;
     padding-top: 2rem;
     &-title {
-        color: #c0392b;
-        @include max-sm {
-            color: #fff;
-            font-weight: bold;
-            font-size: 22pt;
-            text-align: center;
-        }
+         color: #c0392b;
     }
     &-boxleft {
         background-color: #fff;
@@ -22,22 +16,15 @@
             font-size: 15pt;
             line-height: 2;
             &::before {
-                content: '\f0da';
+                content: '\f058';
                 font-family: Fontawesome;
                 margin-right: 5px;
                 font-size: 16px;
             }
         }
-        @include max-sm {
-            background-color: #ff5341;
-            border-right: none!important;
-        }
     }
     &-boxright {
         background-color: #fff;
-        @include max-sm {
-            border-radius: 5px;
-        }
         img {
             background-color: red;
             border-radius: 4px;
@@ -45,6 +32,18 @@
         }
         .text-opacity {
             opacity: 0.6;
+            font-size: 13pt;
+        }
+        .text-holder {
+            text-align: left;
+            margin-left: 4rem;
+            @include max-lg {
+                text-align: center;
+                margin-left: 0;
+            }
+            @include max-lg {
+                text-align: left;
+            }
         }
     }
     &-link-login {
@@ -60,6 +59,7 @@
         }
         @include max-sm {
             padding: 5px 10px;
+            
         }
     }
      &-link-loginfb {
@@ -79,11 +79,21 @@
     }
     
 }
-.input-login {
+.input-login-master {
     position: relative;
+    
+     .li-person {
+        position: absolute;
+        margin-left: -21px;
+        &::before {
+            content: '\f007';
+            font-family: Fontawesome;
+            font-size: 22px;
+            color: #e74c3c;
+        }
+    }
     .li-user {
         position: absolute;
-        top: 2px;
         margin-left: 6px;
         &::before {
             content: '\f2bd';
@@ -95,7 +105,6 @@
     }
     .li-key {
         position: absolute;
-        top: 2px;
         margin-left: 6px;
         &::before {
             content: '\f084';
@@ -105,6 +114,9 @@
             color: #e74c3c;
         }
     }
+    span {
+        font-size: 15pt;
+    }
     input {
         width: 300px;
         margin-bottom: 5px;
@@ -113,12 +125,17 @@
         border: 1px solid #efefef;
         border-radius: 3px;
         @include max-sm {
-            width: auto;
+            width: 100%;
         }
     }
 }
-.list-text {
+.hotline {
+    background-color: #ff5341;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15pt;
+    padding: 5px 10px;
     @include max-sm {
-        display: none;
+        font-size: 11pt;
     }
 }

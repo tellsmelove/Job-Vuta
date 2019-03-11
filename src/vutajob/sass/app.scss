@@ -1,6 +1,7 @@
 @import './mixin';
 @import './global';
 @import './header';
+@import './footer';
 @import './jobmanage';
 @import './jobcompany';
 @import './detailjob';
@@ -8,6 +9,8 @@
 @import './detailperson';
 @import './login';
 @import './registe';
+@import './loginmaster';
+@import './registemaster';
 body{
     color: #000;
 }

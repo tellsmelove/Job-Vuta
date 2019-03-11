@@ -281,6 +281,41 @@ input[type=number] {
 .header-navbar li:not(:first-child) {
   border-left: 1px solid rgba(192, 57, 43, 0.7);
 }
+
+#footer {
+  background-color: #e74c3c;
+  background-image: -o-linear-gradient(135deg, #e74c3c, #e74c3c, #c0392b);
+  background-image: linear-gradient(-45deg, #e74c3c, #e74c3c, #c0392b);
+  color: #fff;
+  padding: 10px 20px;
+}
+#footer a {
+  display: block;
+  padding: 8px 10px;
+  color: #fff;
+  background-color: transparent;
+}
+#footer a:hover {
+  background-color: #c0392b;
+}
+#footer a::before {
+  content: "\F0DA";
+  font-family: Fontawesome;
+  margin-right: 5px;
+}
+#footer .title-footer {
+  font-weight: bold;
+  font-size: 17pt;
+}
+
+.maps {
+  position: relative;
+  min-height: 88%;
+}
+.maps-son {
+  position: absolute;
+  height: 100%;
+}
 .bannerqc-items {
   height: 350px;
 }
@@ -684,7 +719,13 @@ input[type=number] {
   padding-top: 2rem;
 }
 .registe-page-title {
-  color: #c0392b;
+  color: #fff;
+  background-color: #ff5341;
+  padding: 5px 48px;
+  font-size: 18pt;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 .registe-page-boxleft {
   background-color: #fff;
@@ -743,6 +784,258 @@ input[type=number] {
   border: 1px solid #9e9e9e;
   border-radius: 3px;
   padding: 4px 6px;
+}
+
+.login-master-page {
+  background-color: #ff5341;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+.login-master-page-title {
+  color: #c0392b;
+}
+.login-master-page-boxleft {
+  background-color: #fff;
+}
+.login-master-page-boxleft:hover {
+  box-shadow: 2px 2px 2px #c0392b;
+  transition: 0.3s ease-out all;
+}
+.login-master-page-boxleft a {
+  color: #c0392b;
+  font-size: 15pt;
+  line-height: 2;
+}
+.login-master-page-boxleft a::before {
+  content: "\F058";
+  font-family: Fontawesome;
+  margin-right: 5px;
+  font-size: 16px;
+}
+.login-master-page-boxright {
+  background-color: #fff;
+}
+.login-master-page-boxright img {
+  background-color: red;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.login-master-page-boxright .text-opacity {
+  opacity: 0.6;
+  font-size: 13pt;
+}
+.login-master-page-boxright .text-holder {
+  text-align: left;
+  margin-left: 4rem;
+}
+.login-master-page-link-login {
+  background-color: #ff5341;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 107px;
+  width: 200px;
+  border-radius: 4px;
+}
+.login-master-page-link-login:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+.login-master-page-link-loginfb {
+  background-color: #3865ea;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 51px;
+  width: 200px;
+  border-radius: 4px;
+}
+.login-master-page-link-loginfb:hover {
+  background-color: #1f3a8a;
+  color: #fff;
+}
+
+.input-login-master {
+  position: relative;
+}
+.input-login-master .li-person {
+  position: absolute;
+  margin-left: -21px;
+}
+.input-login-master .li-person::before {
+  content: "\F007";
+  font-family: Fontawesome;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.input-login-master .li-user {
+  position: absolute;
+  margin-left: 6px;
+}
+.input-login-master .li-user::before {
+  content: "\F2BD";
+  font-family: Fontawesome;
+  margin-right: 3px;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.input-login-master .li-key {
+  position: absolute;
+  margin-left: 6px;
+}
+.input-login-master .li-key::before {
+  content: "\F084";
+  font-family: Fontawesome;
+  margin-right: 3px;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.input-login-master span {
+  font-size: 15pt;
+}
+.input-login-master input {
+  width: 300px;
+  margin-bottom: 5px;
+  padding: 0.25rem 0 0.25rem 2.5rem;
+  background-color: #fafafa;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+}
+
+.hotline {
+  background-color: #ff5341;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15pt;
+  padding: 5px 10px;
+}
+
+.regis-master-page {
+  background-color: #ff5341;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+.regis-master-page-title {
+  color: #c0392b;
+}
+.regis-master-page-boxleft {
+  background-color: #fff;
+}
+.regis-master-page-boxleft:hover {
+  box-shadow: 2px 2px 2px #c0392b;
+  transition: 0.3s ease-out all;
+}
+.regis-master-page-boxleft a {
+  color: #c0392b;
+  font-size: 15pt;
+  line-height: 2;
+}
+.regis-master-page-boxleft a::before {
+  content: "\F058";
+  font-family: Fontawesome;
+  margin-right: 5px;
+  font-size: 16px;
+}
+.regis-master-page-boxright {
+  background-color: #fff;
+}
+.regis-master-page-boxright img {
+  background-color: red;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.regis-master-page-boxright .text-opacity {
+  opacity: 0.6;
+  font-size: 13pt;
+}
+.regis-master-page-boxright .text-holder {
+  text-align: left;
+  margin-left: 4rem;
+}
+.regis-master-page-boxright input {
+  width: 100%;
+}
+.regis-master-page-link-login {
+  background-color: #ff5341;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 107px;
+  width: 200px;
+  border-radius: 4px;
+}
+.regis-master-page-link-login:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+.regis-master-page-link-loginfb {
+  background-color: #3865ea;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 51px;
+  width: 200px;
+  border-radius: 4px;
+}
+.regis-master-page-link-loginfb:hover {
+  background-color: #1f3a8a;
+  color: #fff;
+}
+
+.input-regis-master {
+  position: relative;
+}
+.input-regis-master .li-person {
+  position: absolute;
+  margin-left: -21px;
+}
+.input-regis-master .li-person::before {
+  content: "\F007";
+  font-family: Fontawesome;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.input-regis-master .li-user {
+  position: absolute;
+  margin-left: 6px;
+}
+.input-regis-master .li-user::before {
+  content: "\F2BD";
+  font-family: Fontawesome;
+  margin-right: 3px;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.input-regis-master .li-key {
+  position: absolute;
+  margin-left: 6px;
+}
+.input-regis-master .li-key::before {
+  content: "\F084";
+  font-family: Fontawesome;
+  margin-right: 3px;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.input-regis-master span {
+  font-size: 15pt;
+}
+.input-regis-master input {
+  width: 300px;
+  margin-bottom: 5px;
+  padding: 0.25rem 0 0.25rem 2.5rem;
+  background-color: #fafafa;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+}
+
+.hotline {
+  background-color: #ff5341;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15pt;
+  padding: 5px 10px;
+}
+
+.local-regismaster-selects {
+  padding: 5px 10px;
+  background-color: #fff;
 }
 
 body {
@@ -1014,6 +1307,13 @@ body {
   .header-navbar {
     font-size: 10pt;
   }
+  .maps-son {
+    position: absolute;
+    height: 300px !important;
+  }
+  .fanpage {
+    margin-top: 19rem;
+  }
   .bannerqc-detail {
     display: none;
   }
@@ -1027,6 +1327,20 @@ body {
   }
   .detailperson__bannerqc {
     display: none;
+  }
+  .login-master-page-boxright .text-holder {
+    text-align: center;
+    margin-left: 0;
+  }
+  .login-master-page-boxright .text-holder {
+    text-align: left;
+  }
+  .regis-master-page-boxright .text-holder {
+    text-align: center;
+    margin-left: 0;
+  }
+  .regis-master-page-boxright .text-holder {
+    text-align: left;
   }
 }
 
@@ -1051,6 +1365,19 @@ body {
     border-right: none;
     border-bottom: 1px solid #dee2e6;
   }
+  .login-page-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 22pt;
+    text-align: center;
+  }
+  .login-page-boxleft {
+    background-color: #ff5341;
+    border-right: none !important;
+  }
+  .login-page-boxright {
+    border-radius: 5px;
+  }
   .login-page-link-login {
     padding: 5px 10px;
   }
@@ -1062,6 +1389,41 @@ body {
   }
   .list-text {
     display: none;
+  }
+  .registe-page-title {
+    background-color: #fff;
+    color: #ff5341;
+  }
+  .registe-page img {
+    display: none;
+  }
+  .registe-page-boxleft {
+    background-color: #ff5341;
+    border-right: none !important;
+  }
+  .login-master-page-link-login {
+    padding: 5px 10px;
+  }
+  .login-master-page-link-loginfb {
+    padding: 5px 10px;
+  }
+  .input-login-master input {
+    width: 100%;
+  }
+  .hotline {
+    font-size: 11pt;
+  }
+  .regis-master-page-link-login {
+    padding: 5px 10px;
+  }
+  .regis-master-page-link-loginfb {
+    padding: 5px 10px;
+  }
+  .input-regis-master input {
+    width: 100%;
+  }
+  .hotline {
+    font-size: 11pt;
   }
   .post-title-sm {
     text-align: center;
