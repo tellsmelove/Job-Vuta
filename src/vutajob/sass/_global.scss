@@ -93,3 +93,8 @@ input[type=number]{
     appearance: none;
     -moz-appearance: textfield;
 }
+@media (min-width: 1300px){
+    .container{
+        max-width: 1450px;
+    }
+}

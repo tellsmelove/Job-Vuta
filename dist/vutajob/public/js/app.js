@@ -96,17 +96,17 @@
 $(document).ready(function () {
   __webpack_require__(/*! ./swiper */ "./src/vutajob/js/swiper.js");
 
+  __webpack_require__(/*! ./calender */ "./src/vutajob/js/calender.js");
+
   var getToggleAside = document.querySelector('[data-toggle-menu]');
-  var eToggle = getToggleAside.dataset.toggleMenu;
-  var menu_target = document.querySelector(eToggle);
-  var menu_li = menu_target.querySelectorAll("li");
-
-  if (menu_li.length && menu_target) {
-    var total_height = menu_li[0].clientHeight * menu_li.length;
-  }
-
   getToggleAside.addEventListener('click', function () {
-    console.log(total_height);
+    var eToggle = getToggleAside.dataset.toggleMenu;
+    var menu_target = document.querySelector(eToggle);
+    var menu_li = menu_target.querySelectorAll("li");
+
+    if (menu_li.length && menu_target) {
+      var total_height = menu_li[0].clientHeight * menu_li.length;
+    }
 
     if (menu_target.classList[menu_target.classList.length - 1] == "active") {
       menu_target.style.height = 0;
@@ -120,6 +120,17 @@ $(document).ready(function () {
     console.log(menu_target.classList[menu_target.classList.length - 1] == "active");
   });
 });
+
+/***/ }),
+
+/***/ "./src/vutajob/js/calender.js":
+/*!************************************!*\
+  !*** ./src/vutajob/js/calender.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 

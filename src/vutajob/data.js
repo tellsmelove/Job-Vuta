@@ -6,6 +6,12 @@ module.exports = {
         "Tuyển dung phổ thông",
         "Việc làm thời vụ",
     ],
+    menulogin:[
+        "Trang chủ",
+        "Tuyển dụng",
+        "Ứng viên",
+        "Công ty",
+    ],
     word:[
         {
             title: "dsadsadsadas",

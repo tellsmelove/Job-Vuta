@@ -1,0 +1,28 @@
+.employer {
+    &-box {
+        background-color: #fff;
+        text-align: center;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    &-listjob:not(:last-child) {
+        border-bottom: 1px dotted orangered;
+        padding-bottom: 12px;
+    }
+}
+
+.number-job {
+    font-size: 20pt;
+    &::before {
+        content: '\f090';
+            font-family: Fontawesome;
+            margin-right: 2rem;
+            font-size: 2rem;
+    }
+}
+.header-login {
+    a {
+        padding: 15px 20px!important;
+    }
+}

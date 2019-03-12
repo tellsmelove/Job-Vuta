@@ -215,7 +215,6 @@ input[type=number] {
           appearance: none;
   -moz-appearance: textfield;
 }
-
 #header {
   background-color: #e74c3c;
   background-image: -o-linear-gradient(135deg, #e74c3c, #e74c3c, #c0392b);
@@ -1050,6 +1049,90 @@ input[type=number] {
   border-bottom: 1px dotted #e74c3c;
 }
 
+.box-login {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px #dee2e6;
+  margin-right: 2px;
+  outline: 1px solid transparent;
+  outline-offset: 7px;
+  transition: 0.4s ease all;
+}
+.box-login:hover {
+  outline-color: #c0392b;
+  outline-offset: 2px;
+}
+.box-login-top {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.box-login-link {
+  background-color: #e74c3c;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.box-login-link:hover {
+  color: #fff;
+  background-color: #c0392b;
+  transition: 0.3s ease-out all;
+}
+.box-login-link span::before {
+  content: "\F0E0";
+  font-family: Fontawesome;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.list-join-job {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px #dee2e6;
+}
+
+.list-join-items:hover {
+  background-color: #e9ebec;
+}
+.list-join-items a {
+  color: #c0392b;
+  font-size: 14pt;
+}
+.list-join-items a:hover {
+  color: orangered;
+}
+.list-join-items .company-job, .list-join-items .timeline-job, .list-join-items .status-job {
+  opacity: 0.7;
+}
+.list-join-items .money-job {
+  color: #c0392b;
+}
+
+.employer-box {
+  background-color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.employer-listjob:not(:last-child) {
+  border-bottom: 1px dotted orangered;
+  padding-bottom: 12px;
+}
+
+.number-job {
+  font-size: 20pt;
+}
+.number-job::before {
+  content: "\F090";
+  font-family: Fontawesome;
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+.header-login a {
+  padding: 15px 20px !important;
+}
+
 body {
   color: #000;
 }
@@ -1258,7 +1341,16 @@ body {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-logo {
+    padding: 10px;
+  }
   .header-logo a img {
     width: 80px;
   }
@@ -1353,7 +1445,7 @@ body {
   }
 }
 
-@media screen and (max-width: 769px) and (max-width: 769px) {
+@media screen and (max-width: 767px) and (max-width: 767px) {
   .header-control li {
     flex: 1 1 auto;
   }

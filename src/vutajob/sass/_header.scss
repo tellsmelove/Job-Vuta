@@ -11,6 +11,9 @@
 .header{
     &-logo{
         border-right: 1px solid rgba(#e66c5f, .4);
+        @include max-md {
+            padding: 10px;
+        }
         a{
             @include bg-color($nocolor!important, $nocolor!important);
             position: relative;
@@ -21,6 +24,7 @@
                 transform: translateY(-50%);
                 @include max-md{
                     width: 80px;
+                    
                 }
             }
         }
