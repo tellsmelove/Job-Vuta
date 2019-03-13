@@ -14,6 +14,7 @@
 @import './listjobcompany';
 @import './personlogin';
 @import './employer';
+@import './employerpost';
 body{
     color: #000;
 }
@@ -39,14 +40,6 @@ body{
         .res{
             &::before {
                 content: '\f25d';
-                font-family: Fontawesome;
-                margin-right: 5px;
-                font-size: 3rem;
-            }
-        }
-        .finish{
-            &::before {
-                content: '\f058';
                 font-family: Fontawesome;
                 margin-right: 5px;
                 font-size: 3rem;

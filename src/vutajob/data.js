@@ -39,5 +39,42 @@ module.exports = {
         "BR-VT",
         "Nha Trang",
         "Đồng Nai",
-    ]
+    ],
+    typejobs: [
+        "Toàn thời gian cố định",
+        "Toàn thời gian tạm thời",
+        "Bán thời gian cố định",
+        "Bán thời gian tạm thời",
+        "Thực tập",
+    ],
+    exp: [
+        "Chưa có kinh nghiệm",
+        "Dưới 1 năm",
+        "1 năm",
+        "2 năm",
+        "3 năm",
+        "4 năm",
+        "> 5 năm",
+    ],
+    degree: [
+        "Lao động phổ thông",
+        "Trung học",
+        "Trung cấp",
+        "Cao đẳng",
+        "Đại học",
+        "Trên đại học",
+    ],
+    another: [
+        "Không yêu cầu",
+        "Nam",
+        "Nữ",
+    ],
+    language: [
+        "Tiếng việt",
+        "Tiếng Anh",
+        "Tiếng Thái Lan",
+        "Tiếng Pháp",
+        "Tiếng Tây Ban Nha",
+        "Tiếng Nga",
+    ],
 }

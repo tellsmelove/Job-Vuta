@@ -286,7 +286,6 @@ input[type=number] {
   background-image: -o-linear-gradient(135deg, #e74c3c, #e74c3c, #c0392b);
   background-image: linear-gradient(-45deg, #e74c3c, #e74c3c, #c0392b);
   color: #fff;
-  padding: 10px 20px;
 }
 #footer a {
   display: block;
@@ -1114,23 +1113,150 @@ input[type=number] {
   border-radius: 5px;
   border: 1px solid #ddd;
 }
+.employer-box a {
+  color: #000;
+}
+.employer-box a:hover {
+  color: orangered;
+}
 .employer-listjob:not(:last-child) {
   border-bottom: 1px dotted orangered;
   padding-bottom: 12px;
 }
 
-.number-job {
-  font-size: 20pt;
-}
-.number-job::before {
+.icons-job::before {
   content: "\F090";
   font-family: Fontawesome;
-  margin-right: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+.icons2-job::before {
+  content: "\F02D";
+  font-family: Fontawesome;
+  font-size: 3rem;
+}
+
+.number-job {
+  font-size: 22pt;
 }
 
 .header-login a {
-  padding: 15px 20px !important;
+  padding: 20px 20px !important;
+}
+
+.timepost {
+  border: 1px solid #ddd;
+}
+.timepost a {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.form-box {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.form-box input {
+  display: none;
+}
+.form-box label::before {
+  content: "";
+  font-family: Fontawesome;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid red;
+  margin-right: 10px;
+  vertical-align: middle;
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+.form-box input:checked + label::before {
+  content: "\F00C";
+  font-family: Fontawesome;
+  z-index: 99;
+  padding: 0px 5px;
+  color: #000;
+}
+
+.form-box-filter {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  height: 250px;
+  overflow: auto;
+}
+.form-box-filter .career-check {
+  display: none;
+}
+.form-box-filter label::before {
+  content: "";
+  font-family: Fontawesome;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid red;
+  margin-right: 10px;
+  border-radius: 30%;
+  vertical-align: middle;
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+.form-box-filter .career-check:checked + label::before {
+  content: "\F00C";
+  font-family: Fontawesome;
+  z-index: 99;
+  padding: 0px 5px;
+  color: #000;
+}
+
+.form-title::before {
+  content: "* ";
+  color: red;
+}
+
+.title-box {
+  color: #c0392b;
+  font-weight: bold;
+  padding: 16px 0px;
+}
+
+.form-control-pd {
+  padding: 24px 10px;
+}
+
+.form-control-ps {
+  height: 48px;
+}
+
+.link-lose-form {
+  background-color: #fff;
+  color: gray;
+  font-weight: bold;
+  padding: 12px 14px;
+  border-radius: 4px;
+  margin: 0px 8px;
+  border: 1px solid #ddd;
+}
+.link-lose-form:hover {
+  background-color: #ececec;
+  color: #000;
+}
+
+.link-post-form {
+  background-color: #e74c3c;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 14px;
+  border-radius: 4px;
+}
+.link-post-form:hover {
+  background-color: #942b20;
+  color: #fff;
 }
 
 body {
@@ -1155,12 +1281,6 @@ body {
 }
 .box-function a .res::before {
   content: "\F25D";
-  font-family: Fontawesome;
-  margin-right: 5px;
-  font-size: 3rem;
-}
-.box-function a .finish::before {
-  content: "\F058";
   font-family: Fontawesome;
   margin-right: 5px;
   font-size: 3rem;
@@ -1443,6 +1563,9 @@ body {
   .regis-master-page-boxright .text-holder {
     text-align: left;
   }
+  .employer-box {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 767px) and (max-width: 767px) {
@@ -1524,6 +1647,12 @@ body {
   }
   .hotline {
     font-size: 11pt;
+  }
+  .header-login a {
+    padding: 15px 20px !important;
+  }
+  .display-none {
+    display: none;
   }
   .post-title-sm {
     text-align: center;

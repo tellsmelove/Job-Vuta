@@ -96,7 +96,7 @@
 $(document).ready(function () {
   __webpack_require__(/*! ./swiper */ "./src/vutajob/js/swiper.js");
 
-  __webpack_require__(/*! ./calender */ "./src/vutajob/js/calender.js");
+  __webpack_require__(/*! ./filters */ "./src/vutajob/js/filters.js");
 
   var getToggleAside = document.querySelector('[data-toggle-menu]');
   getToggleAside.addEventListener('click', function () {
@@ -123,14 +123,21 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ "./src/vutajob/js/calender.js":
-/*!************************************!*\
-  !*** ./src/vutajob/js/calender.js ***!
-  \************************************/
+/***/ "./src/vutajob/js/filters.js":
+/*!***********************************!*\
+  !*** ./src/vutajob/js/filters.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+$(document).ready(function () {
+  $("#myInput").on("keyup", function () {
+    var value = $(this).val().toLowerCase();
+    $("#xyz label").filter(function () {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+    });
+  });
+});
 
 /***/ }),
 

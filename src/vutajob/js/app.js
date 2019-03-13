@@ -1,6 +1,6 @@
 $(document).ready(() => {
     require('./swiper');
-    require('./calender');
+    require('./filters');
     var getToggleAside = document.querySelector('[data-toggle-menu]');
     
     getToggleAside.addEventListener('click', function () {
