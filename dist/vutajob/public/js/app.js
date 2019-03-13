@@ -130,12 +130,10 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$(document).ready(function () {
-  $("#myInput").on("keyup", function () {
-    var value = $(this).val().toLowerCase();
-    $("#xyz label").filter(function () {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-    });
+$("#myInput").on("keyup", function () {
+  var value = $(this).val().toLowerCase();
+  $("#xyz label").filter(function () {
+    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
   });
 });
 
@@ -148,7 +146,7 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var swiper = new Swiper('.swiper-person', {
+new Swiper('.swiper-person', {
   slidesPerView: 3,
   spaceBetween: 30,
   slidesPerGroup: 1,
@@ -177,16 +175,11 @@ var swiper = new Swiper('.swiper-person', {
     }
   }
 });
-var swiper = new Swiper('.swiper-main', {
+new Swiper('.swiper-main', {
   slidesPerView: 1,
   spaceBetween: 30,
-  slidesPerGroup: 1,
   loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: '.pagination-main',
-    clickable: true
-  },
+  autoHeight: true,
   autoplay: {
     delay: 5000
   }

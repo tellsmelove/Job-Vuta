@@ -77,4 +77,12 @@ module.exports = {
         "Tiếng Tây Ban Nha",
         "Tiếng Nga",
     ],
+    typeworks: [
+        "Việc làm quản lý",
+        "Việc làm văn phòng",
+        "Việc làm phổ thông",
+        "Việc làm thời vụ",
+        "Việc làm part time",
+        "Việc làm ngoài giờ",
+    ]
 }
