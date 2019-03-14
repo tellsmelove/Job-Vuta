@@ -1,6 +1,8 @@
 $(document).ready(() => {
-    require('./swiper');
+    require('./make_tag');
     require('./filters');
+    require('./swiper');
+    require('./headerscroll');
     
     var getToggleAside = document.querySelector('[data-toggle-menu]');
     

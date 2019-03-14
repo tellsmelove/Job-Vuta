@@ -12,7 +12,7 @@
             display: inline-block;
             width: 25px;
             height: 25px;
-            border: 1px solid red;
+            border: 1px solid #696666;
             margin-right: 10px;
             vertical-align: middle;
             transform: translateY(-5%);
@@ -24,7 +24,7 @@
         z-index: 99;
         padding: 0px 5px;
         
-        color: #000;
+        color: #46da1a;
     }
 }
 .form-box-filter {
@@ -43,7 +43,7 @@
             display: inline-block;
             width: 25px;
             height: 25px;
-            border: 1px solid red;
+            border: 1px solid #696666;
             margin-right: 10px;
             border-radius: 30%;
             vertical-align: middle;
@@ -55,8 +55,7 @@
         font-family: Fontawesome;
         z-index: 99;
         padding: 0px 5px;
-        
-        color: #000;
+        color: #46da1a;
     }
 }
 .form-title {

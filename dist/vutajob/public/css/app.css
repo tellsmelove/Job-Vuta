@@ -216,6 +216,11 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 #header {
+  width: 100%;
+  position: static;
+  top: -100%;
+  transition: 0.4s ease all;
+  z-index: 999;
   background-color: #e74c3c;
   background-image: -o-linear-gradient(135deg, #e74c3c, #e74c3c, #c0392b);
   background-image: linear-gradient(-45deg, #e74c3c, #e74c3c, #c0392b);
@@ -228,6 +233,10 @@ input[type=number] {
 }
 #header a:hover {
   background-color: #c0392b;
+}
+#header.affix {
+  position: fixed;
+  top: 0;
 }
 
 .header-logo {
@@ -728,7 +737,6 @@ input[type=number] {
 .registe-page-boxright {
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 3px 3px 3px #dee2e6;
 }
 .registe-page-boxright img {
   background-color: red;
@@ -1169,7 +1177,7 @@ input[type=number] {
   display: inline-block;
   width: 25px;
   height: 25px;
-  border: 1px solid red;
+  border: 1px solid #696666;
   margin-right: 10px;
   vertical-align: middle;
   -webkit-transform: translateY(-5%);
@@ -1180,7 +1188,7 @@ input[type=number] {
   font-family: Fontawesome;
   z-index: 99;
   padding: 0px 5px;
-  color: #000;
+  color: #46da1a;
 }
 
 .form-box-filter {
@@ -1199,7 +1207,7 @@ input[type=number] {
   display: inline-block;
   width: 25px;
   height: 25px;
-  border: 1px solid red;
+  border: 1px solid #696666;
   margin-right: 10px;
   border-radius: 30%;
   vertical-align: middle;
@@ -1211,7 +1219,7 @@ input[type=number] {
   font-family: Fontawesome;
   z-index: 99;
   padding: 0px 5px;
-  color: #000;
+  color: #46da1a;
 }
 
 .form-title::before {
@@ -1666,6 +1674,9 @@ body {
     text-align: center;
   }
   .banner-slide {
+    display: none;
+  }
+  .banner-bottom {
     display: none;
   }
 }

@@ -13,38 +13,40 @@
 </head>
 
 <body>
-    <header id="header">
-        <header id="header" class="header-login">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-9 header-logo">
-                        <a href="#" class="d-block h-100">
-                            <img src="{{img('logo.png')}}" alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-10 px-0 order-md-1 order-2 text-right">
-                        <div class="d-md-inline-flex flex-column h-100">
-                            <nav class="header-navbar" id="navbar">
-                                <ul class="nolist d-flex flex-md-row flex-column text-left text-md-center">
-                                    {% for item in data.menulogin %}
-                                    <li><a href="#">{{item}}</a></li>
-                                    {% endfor %}
-                                </ul>
-                            </nav>
+    <div id="app">
+        <header id="header">
+            <header id="header" class="header-login">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-9 header-logo">
+                            <a href="#" class="d-block h-100">
+                                <img src="{{img('logo.png')}}" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-10 px-0 order-md-1 order-2 text-right">
+                            <div class="d-md-inline-flex flex-column h-100">
+                                <nav class="header-navbar" id="navbar">
+                                    <ul class="nolist d-flex flex-md-row flex-column text-left text-md-center">
+                                        {% for item in data.menulogin %}
+                                        <li><a href="#">{{item}}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-3  d-md-none d-block order-1 header-toggle px-0">
+                            <a href="#" class="d-block text-md-right text-center" data-toggle-menu="#navbar">
+                                <i class="fa fa-bars fa-lg pr-md-2 pr-0"></i>
+                                <span class="d-block text-md-right text-center">Menu</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-3  d-md-none d-block order-1 header-toggle px-0">
-                        <a href="#" class="d-block text-md-right text-center" data-toggle-menu="#navbar">
-                            <i class="fa fa-bars fa-lg pr-md-2 pr-0"></i>
-                            <span class="d-block text-md-right text-center">Menu</span>
-                        </a>
-                    </div>
                 </div>
-            </div>
+            </header>
         </header>
-    </header>
-    {% block content %}{% endblock %}
-    {% include 'components/footer.html' %}
+        {% block content %}{% endblock %}
+        {% include 'components/footer.html' %}
+    </div>
 
     <script src="{{ js('jquery.min.js') }}"></script>
     <script src="{{ js('popper.min.js') }}"></script>

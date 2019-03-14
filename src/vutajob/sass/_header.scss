@@ -1,4 +1,9 @@
 #header{
+    width: 100%;
+    position: static;
+    top:-100%;
+    transition: .4s ease all;
+    z-index: 999;
     background-color: #e74c3c;
     background-image: linear-gradient(-45deg, #e74c3c, #e74c3c,#c0392b);
     a{
@@ -6,6 +11,10 @@
         padding: 8px 10px;
         color: #fff;
         @include bg-color($nocolor, #c0392b);
+    }
+    &.affix{
+        position: fixed;
+        top: 0;
     }
 }
 .header{

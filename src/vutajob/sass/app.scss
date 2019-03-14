@@ -230,3 +230,8 @@ body{
         height: auto;
     }
 }
+.banner-bottom {
+    @include max-sm {
+        display: none;
+    }
+}
