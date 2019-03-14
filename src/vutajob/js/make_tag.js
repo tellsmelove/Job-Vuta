@@ -14,6 +14,18 @@ var app = new Vue({
         },
         removeTag(key){
             this.$delete(this.tagList, key)
+        },
+        defaultValue(data){
+            if (data){
+                let _arr = data.split(',')
+                for(let i of _arr){
+                    console.log(i)
+                    this.tagList.push(i)
+                }
+            }
+            return this.tagList
         }
+    },
+    created(){
     }
 }).$mount('#app')

@@ -70,8 +70,29 @@
                             <span class="form-title font-weight-bold">Quyền lợi được hưởng</span>
                             <textarea name="description" id="descript" class="w-100 form-control" rows="10"></textarea>
                         </div>
-                        <div class="col-lg-12 py-2">
+                        <div class="col-lg-6 py-2">
                             <span class="form-title font-weight-bold">Loại việc làm</span>
+                            <div class="input-seach w-100">
+                                <select class="input-select pl-0 input-seach selectpicker w-100 form-control p-0 form-control-ps">
+                                    <option value="audi" selected disabled>Chọn</option>
+                                    
+                                    <option class="input-select-item" value="volvo">Việc làm quản lý</option>
+                                    
+                                    <option class="input-select-item" value="volvo">Việc làm văn phòng</option>
+                                    
+                                    <option class="input-select-item" value="volvo">Việc làm phổ thông</option>
+                                    
+                                    <option class="input-select-item" value="volvo">Việc làm thời vụ</option>
+                                    
+                                    <option class="input-select-item" value="volvo">Việc làm part time</option>
+                                    
+                                    <option class="input-select-item" value="volvo">Việc làm ngoài giờ</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 py-2">
+                            <span class="form-title font-weight-bold">Số lượng</span>
                             <div class="input-seach w-100">
                                 <select class="input-select pl-0 input-seach selectpicker w-100 form-control p-0 form-control-ps">
                                     <option value="audi" selected disabled>Chọn</option>
@@ -143,11 +164,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="py-2">
+                    <!-- <div class="py-2">
                         <div class="border border-muted rounded">
                             <div class="box-title form-title p-3 font-weight-bold"><b>Vị trí tuyển dụng</b></div>
                             <input type="text" class="form-control" @keydown.tab.prevent="makeTags()" @keyup.188.18="makeTags()" v-model="InputTags">
-                            <input type="text" :value="tagList" hidden>
+                            <input type="text" v-model="tagList" v-bind="defaultValue('ddasdasda,dasdadad,asdasdasdsa')">
                             <ul id="listTag" class="nolist px-3">
                                 <li v-for="(tag, key) of tagList" :key=key>
                                     <a href="#" class="d-inline-block" @click.prevent="removeTag(key)">
@@ -157,7 +178,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="py-2">
                         <span class="form-title font-weight-bold">Loại hình công việc</span>
                         <div class="p-3 form-box">
@@ -166,7 +187,7 @@
                             <input id="job-3" type="checkbox" name="gender" value="male"><label for="job-3"><span>Bán thời gian cố định</span></label><br>
                             <input id="job-4" type="checkbox" name="gender" value="male"><label for="job-4"><span>Bán thời gian tạm thời</span></label><br>
                             <input id="job-5" type="checkbox" name="gender" value="male"><label for="job-5"><span>Thực tập</span></label>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
