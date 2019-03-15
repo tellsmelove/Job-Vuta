@@ -10,7 +10,7 @@
         display: block;
         padding: 8px 10px;
         color: #000;
-        @include bg-color($nocolor, #4bec58);
+        @include bg-color($nocolor, #1a4013);
         &:hover{
             color: #fff;
         }
