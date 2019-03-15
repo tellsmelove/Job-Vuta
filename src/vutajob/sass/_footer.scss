@@ -1,11 +1,11 @@
 #footer{
-    background-color: #e74c3c;
-    background-image: linear-gradient(-45deg, #e74c3c, #e74c3c,#c0392b);
-    color: #fff;
+    background-color: #fff;
+    background-image: linear-gradient(-45deg, #5d88b3, #f8f9fa, #96b196);
+    color: #000;
     a{
         display: block;
         padding: 8px 10px;
-        color: #fff;
+        color: #000;
         @include bg-color($nocolor, #c0392b);
         &::before {
             content: '\f0da';

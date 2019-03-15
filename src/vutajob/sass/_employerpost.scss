@@ -99,3 +99,25 @@
         color: #fff;
     }
 }
+.icon1-edit-post {
+    
+    &::before {
+        content: '\f09d';
+        font-family: Fontawesome;
+        font-size: 26px;
+        
+    }
+}
+.icon1-del-post {
+
+    &::before {
+        content: '\f1f8';
+        font-family: Fontawesome;
+        font-size: 26px;
+    }
+}
+.deadlinepost {
+    @include max-sm {
+        display: none;
+    }
+}

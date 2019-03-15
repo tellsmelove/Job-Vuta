@@ -84,5 +84,18 @@ module.exports = {
         "Việc làm thời vụ",
         "Việc làm part time",
         "Việc làm ngoài giờ",
+    ],
+    number: [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+
     ]
 }

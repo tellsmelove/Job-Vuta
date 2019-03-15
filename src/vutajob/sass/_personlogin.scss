@@ -9,7 +9,6 @@
     &:hover {
         outline-color: #c0392b;
         outline-offset: 2px;
-        // box-shadow: 3px 3px 3px #a2a8ad;
     }
     &-top {
         border-bottom: 1px solid rgba(0,0,0,.1);
@@ -50,6 +49,21 @@
         &:hover {
             color: orangered;
             
+        }
+    }
+
+
+}
+.deadtime-job {
+    @include max-sm {
+        display: none;
+    }
+}
+table {
+    a {
+        color: #000;
+        &:hover {
+            color: green;
         }
     }
     .company-job, .timeline-job, .status-job {
