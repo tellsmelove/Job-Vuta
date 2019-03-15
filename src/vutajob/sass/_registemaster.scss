@@ -1,18 +1,13 @@
 .regis-master-page {
-    background-color: #ff5341;
-    min-height: 100vh;
+    background-color: #55c304;
     padding-top: 2rem;
     &-title {
          color: #c0392b;
     }
     &-boxleft {
         background-color: #fff;
-        &:hover {
-            box-shadow: 2px 2px 2px #c0392b;
-            transition: .3s ease-out all;
-        }
         a {
-            color: #c0392b;
+            color: #55c304;
             font-size: 15pt;
             line-height: 2;
             &::before {
@@ -133,7 +128,7 @@
     }
 }
 .hotline {
-    background-color: #ff5341;
+    background-color: #55c304;
     color: #fff;
     font-weight: bold;
     font-size: 15pt;

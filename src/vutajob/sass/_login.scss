@@ -1,11 +1,12 @@
 .login-page {
-    background-color: #ff5341;
-    min-height: 100vh;
+    background-color: #55c304;
+    min-height: 60vh;
     padding-top: 2rem;
     &-title {
-        color: #c0392b;
+        color: #55c304;
+        font-weight: bold;
         @include max-sm {
-            color: #fff;
+            color: #55c304;
             font-weight: bold;
             font-size: 22pt;
             text-align: center;
@@ -13,12 +14,8 @@
     }
     &-boxleft {
         background-color: #fff;
-        &:hover {
-            box-shadow: 2px 2px 2px #c0392b;
-            transition: .3s ease-out all;
-        }
         a {
-            color: #c0392b;
+            color: #55c304;
             font-size: 15pt;
             line-height: 2;
             &::before {
@@ -29,7 +26,7 @@
             }
         }
         @include max-sm {
-            background-color: #ff5341;
+            background-color: #fff;
             border-right: none!important;
         }
     }
@@ -39,9 +36,7 @@
             border-radius: 5px;
         }
         img {
-            background-color: red;
-            border-radius: 4px;
-            margin-bottom: 1rem;
+            max-width: 200px;
         }
         .text-opacity {
             opacity: 0.6;

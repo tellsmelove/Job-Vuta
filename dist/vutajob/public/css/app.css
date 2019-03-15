@@ -222,8 +222,8 @@ input[type=number] {
   transition: 0.4s ease all;
   z-index: 999;
   background-color: #fff;
-  background-image: -o-linear-gradient(135deg, #5d88b3, #fbfffe, #ccffcc);
-  background-image: linear-gradient(-45deg, #5d88b3, #fbfffe, #ccffcc);
+  background-image: -o-linear-gradient(135deg, #c4d9ef, #fbfffe, #d9deef);
+  background-image: linear-gradient(-45deg, #c4d9ef, #fbfffe, #d9deef);
 }
 #header a {
   display: block;
@@ -232,7 +232,7 @@ input[type=number] {
   background-color: transparent;
 }
 #header a:hover {
-  background-color: #1c9c05;
+  background-color: #4bec58;
 }
 #header a:hover {
   color: #fff;
@@ -264,22 +264,22 @@ input[type=number] {
   font-weight: 600;
   text-align: center;
   padding: 5px 15px;
-  border-top: 1px solid rgba(28, 156, 5, 0.7);
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
 }
 .header-control {
-  border-left: 1px solid rgba(28, 156, 5, 0.7);
+  border-left: 1px solid rgba(0, 0, 0, 0.7);
 }
 .header-control a {
   text-align: center;
 }
 .header-toggle {
-  border-left: 1px solid rgba(28, 156, 5, 0.7);
+  border-left: 1px solid rgba(0, 0, 0, 0.7);
 }
 .header-toggle a {
   font-size: 10pt;
 }
 .header-navbar {
-  border-left: 1px solid rgba(28, 156, 5, 0.7);
+  border-left: 1px solid rgba(0, 0, 0, 0.7);
   border-bottom: 1px solid rgba(68, 191, 46, 0.4);
   border-right: 1px solid rgba(68, 191, 46, 0.4);
 }
@@ -290,13 +290,13 @@ input[type=number] {
   border-right: 1px solid rgba(68, 191, 46, 0.4);
 }
 .header-navbar li:not(:first-child) {
-  border-left: 1px solid rgba(28, 156, 5, 0.7);
+  border-left: 1px solid rgba(0, 0, 0, 0.7);
 }
 
 #footer {
   background-color: #fff;
-  background-image: -o-linear-gradient(135deg, #5d88b3, #f8f9fa, #96b196);
-  background-image: linear-gradient(-45deg, #5d88b3, #f8f9fa, #96b196);
+  background-image: -o-linear-gradient(135deg, #d7f7d7, #f8f9fa, #dbf5db);
+  background-image: linear-gradient(-45deg, #d7f7d7, #f8f9fa, #dbf5db);
   color: #000;
 }
 #footer a {
@@ -330,9 +330,6 @@ input[type=number] {
   height: 350px;
 }
 
-.job-manage {
-  background-color: #f5f5f5;
-}
 .job-manage__list {
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -375,9 +372,6 @@ input[type=number] {
   background-color: #fff;
 }
 
-.job-company {
-  background-color: #f5f5f5;
-}
 .job-company__title {
   font-size: 15pt;
   color: #c0392b;
@@ -627,22 +621,19 @@ input[type=number] {
 }
 
 .login-page {
-  background-color: #ff5341;
-  min-height: 100vh;
+  background-color: #55c304;
+  min-height: 60vh;
   padding-top: 2rem;
 }
 .login-page-title {
-  color: #c0392b;
+  color: #55c304;
+  font-weight: bold;
 }
 .login-page-boxleft {
   background-color: #fff;
 }
-.login-page-boxleft:hover {
-  box-shadow: 2px 2px 2px #c0392b;
-  transition: 0.3s ease-out all;
-}
 .login-page-boxleft a {
-  color: #c0392b;
+  color: #55c304;
   font-size: 15pt;
   line-height: 2;
 }
@@ -656,9 +647,7 @@ input[type=number] {
   background-color: #fff;
 }
 .login-page-boxright img {
-  background-color: red;
-  border-radius: 4px;
-  margin-bottom: 1rem;
+  max-width: 200px;
 }
 .login-page-boxright .text-opacity {
   opacity: 0.6;
@@ -725,13 +714,13 @@ input[type=number] {
 }
 
 .registe-page {
-  background-color: #ff5341;
+  background-color: #55c304;
   min-height: 100vh;
   padding-top: 2rem;
 }
 .registe-page-title {
   color: #fff;
-  background-color: #ff5341;
+  background-color: #55c304;
   padding: 5px 40px;
   font-size: 18pt;
   border-radius: 5px;
@@ -743,7 +732,6 @@ input[type=number] {
   border-radius: 5px;
 }
 .registe-page-boxright img {
-  background-color: red;
   border-radius: 4px;
   margin-bottom: 1rem;
 }
@@ -751,7 +739,7 @@ input[type=number] {
   opacity: 0.6;
 }
 .registe-page-link-login {
-  background-color: #ff5341;
+  background-color: #55c304;
   color: #fff;
   font-weight: bold;
   padding: 6px 107px;
@@ -903,8 +891,7 @@ input[type=number] {
 }
 
 .regis-master-page {
-  background-color: #ff5341;
-  min-height: 100vh;
+  background-color: #55c304;
   padding-top: 2rem;
 }
 .regis-master-page-title {
@@ -913,12 +900,8 @@ input[type=number] {
 .regis-master-page-boxleft {
   background-color: #fff;
 }
-.regis-master-page-boxleft:hover {
-  box-shadow: 2px 2px 2px #c0392b;
-  transition: 0.3s ease-out all;
-}
 .regis-master-page-boxleft a {
-  color: #c0392b;
+  color: #55c304;
   font-size: 15pt;
   line-height: 2;
 }
@@ -1020,7 +1003,7 @@ input[type=number] {
 }
 
 .hotline {
-  background-color: #ff5341;
+  background-color: #55c304;
   color: #fff;
   font-weight: bold;
   font-size: 15pt;
@@ -1486,14 +1469,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .header-sologan {
-    border-left: 1px solid rgba(28, 156, 5, 0.7);
+    border-left: 1px solid rgba(0, 0, 0, 0.7);
     border-right: 1px solid rgba(68, 191, 46, 0.4);
   }
   .header-control li:first-child {
     border-bottom: 1px solid rgba(68, 191, 46, 0.4);
   }
   .header-control li:last-child {
-    border-top: 1px solid rgba(28, 156, 5, 0.7);
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
   }
   .header-control a .fa {
     display: none;
@@ -1526,14 +1509,14 @@ body {
     border-right: 1px solid rgba(68, 191, 46, 0.4);
   }
   .header-control li:last-child {
-    border-left: 1px solid rgba(28, 156, 5, 0.7);
+    border-left: 1px solid rgba(0, 0, 0, 0.7);
     border-right: 1px solid rgba(68, 191, 46, 0.4);
   }
   .header-control a {
     font-size: 10pt;
   }
   .header-navbar {
-    border-top: 0 solid rgba(28, 156, 5, 0.7);
+    border-top: 0 solid rgba(0, 0, 0, 0.7);
     border-width: 0;
     overflow-y: hidden;
     height: 0px;
@@ -1543,10 +1526,10 @@ body {
   .header-navbar ul {
     padding: 5px;
     border-radius: 5px;
-    background-color: rgba(28, 156, 5, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
   }
   .header-navbar ul li:not(:last-child) {
-    border-bottom: 1px solid #1c9c05;
+    border-bottom: 1px solid #000;
     border-right: 0;
   }
   .header-navbar ul li a::before {
@@ -1555,9 +1538,9 @@ body {
     margin-right: 5px;
   }
   .header-navbar ul li a:hover {
-    background-image: -webkit-gradient(linear, left top, right top, from(#1c9c05), to(#44bf2e));
-    background-image: -o-linear-gradient(left, #1c9c05, #44bf2e);
-    background-image: linear-gradient(to right, #1c9c05, #44bf2e);
+    background-image: -webkit-gradient(linear, left top, right top, from(#11490f), to(#44bf2e));
+    background-image: -o-linear-gradient(left, #11490f, #44bf2e);
+    background-image: linear-gradient(to right, #11490f, #44bf2e);
   }
   .bannerqc-items {
     height: 150px;
@@ -1635,13 +1618,13 @@ body {
     border-bottom: 1px solid #dee2e6;
   }
   .login-page-title {
-    color: #fff;
+    color: #55c304;
     font-weight: bold;
     font-size: 22pt;
     text-align: center;
   }
   .login-page-boxleft {
-    background-color: #ff5341;
+    background-color: #fff;
     border-right: none !important;
   }
   .login-page-boxright {
@@ -1661,7 +1644,7 @@ body {
   }
   .registe-page-title {
     background-color: #fff;
-    color: #ff5341;
+    color: #55c304;
   }
   .registe-page img {
     display: none;

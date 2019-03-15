@@ -55,14 +55,6 @@ for(let swiper of post_swiper_index){
                 autoplay: {
                     delay: 5000,
                 },
-                pagination: {
-                    el: '.pagination-person2',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next2',
-                    prevEl: '.swiper-button-prev2',
-                },
             },
             480: {
                 slidesPerView: 1,
@@ -71,14 +63,6 @@ for(let swiper of post_swiper_index){
                 simulateTouch: true,
                 autoplay: {
                     delay: 5000,
-                },
-                pagination: {
-                    el: '.pagination-person2',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next2',
-                    prevEl: '.swiper-button-prev2',
                 },
             },
             640: {
@@ -89,14 +73,6 @@ for(let swiper of post_swiper_index){
                 autoplay: {
                     delay: 5000,
                 },
-                pagination: {
-                    el: '.pagination-person2',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next2',
-                    prevEl: '.swiper-button-prev2',
-                },
             },
             767: {
                 slidesPerView: 3,
@@ -104,7 +80,7 @@ for(let swiper of post_swiper_index){
                 direction: 'vertical',
                 simulateTouch: false,
                 
-            }
+            },
         }
     });
 }

@@ -12749,14 +12749,6 @@ try {
           simulateTouch: true,
           autoplay: {
             delay: 5000
-          },
-          pagination: {
-            el: '.pagination-person2',
-            clickable: true
-          },
-          navigation: {
-            nextEl: '.swiper-button-next2',
-            prevEl: '.swiper-button-prev2'
           }
         },
         480: {
@@ -12766,14 +12758,6 @@ try {
           simulateTouch: true,
           autoplay: {
             delay: 5000
-          },
-          pagination: {
-            el: '.pagination-person2',
-            clickable: true
-          },
-          navigation: {
-            nextEl: '.swiper-button-next2',
-            prevEl: '.swiper-button-prev2'
           }
         },
         640: {
@@ -12783,14 +12767,6 @@ try {
           simulateTouch: true,
           autoplay: {
             delay: 5000
-          },
-          pagination: {
-            el: '.pagination-person2',
-            clickable: true
-          },
-          navigation: {
-            nextEl: '.swiper-button-next2',
-            prevEl: '.swiper-button-prev2'
           }
         },
         767: {
