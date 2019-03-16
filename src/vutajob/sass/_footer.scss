@@ -6,7 +6,7 @@
         display: block;
         padding: 8px 10px;
         color: #000;
-        @include bg-color($nocolor, #c0392b);
+        @include bg-color($nocolor, #ddd);
         &::before {
             content: '\f0da';
             font-family: Fontawesome;

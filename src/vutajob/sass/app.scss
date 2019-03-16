@@ -161,6 +161,9 @@ body{
             font-size: 22px;
             color: #1c9c05;
         }
+        @include max-sm {
+            display: none;
+        }
     }
     .li-hammer-wrench {
         position: absolute;
@@ -174,6 +177,9 @@ body{
             font-size: 22px;
             color: #1c9c05;
         }
+        @include max-sm {
+            display: none;
+        }
     }
     .li-local {
         position: absolute;
@@ -186,6 +192,9 @@ body{
             margin-right: 5px;
             font-size: 22px;
             color: #1c9c05;
+        }
+        @include max-sm {
+            display: none;
         }
     }
     .li-seach {
@@ -203,7 +212,9 @@ body{
     }
     input {
         padding: 0.5rem 0.5rem 0.5rem 2.5rem;
-        
+        @include max-sm {
+            padding: 0.5rem 0 0.5rem 0.5rem;
+        }
     }
     &-link {
         display: block;
@@ -222,6 +233,9 @@ body{
 .input-select{
     background-color: #fff!important;
     padding: 0.75rem 0.5rem 0.75rem 2.5rem;
+    @include max-sm {
+            padding: 0.5rem 0 0.5rem 0.5rem;
+        }
 }
 .banner-slide {
     @include max-sm {

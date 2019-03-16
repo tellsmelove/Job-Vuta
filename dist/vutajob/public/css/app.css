@@ -306,7 +306,7 @@ input[type=number] {
   background-color: transparent;
 }
 #footer a:hover {
-  background-color: #c0392b;
+  background-color: #ddd;
 }
 #footer a::before {
   content: "\F0DA";
@@ -597,7 +597,7 @@ input[type=number] {
 
 .title-skill {
   display: block;
-  background-color: #e74c3c;
+  background-color: #1faf05;
   color: #fff;
   padding: 4px 8px;
   font-weight: bold;
@@ -714,8 +714,8 @@ input[type=number] {
 }
 
 .registe-page {
-  background-color: #55c304;
-  min-height: 100vh;
+  background-color: #418012;
+  min-height: 70vh;
   padding-top: 2rem;
 }
 .registe-page-title {
@@ -1690,6 +1690,21 @@ body {
   }
   .company-sm {
     text-align: center;
+  }
+  .input-seach .li-briefcase {
+    display: none;
+  }
+  .input-seach .li-hammer-wrench {
+    display: none;
+  }
+  .input-seach .li-local {
+    display: none;
+  }
+  .input-seach input {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+  }
+  .input-select {
+    padding: 0.5rem 0 0.5rem 0.5rem;
   }
   .banner-slide {
     display: none;
