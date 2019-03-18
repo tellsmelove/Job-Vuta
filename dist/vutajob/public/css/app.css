@@ -675,7 +675,6 @@ input[type=number] {
   color: #fff;
   font-weight: bold;
   padding: 6px 51px;
-  width: 200px;
   border-radius: 4px;
 }
 .login-page-link-loginfb:hover {
@@ -683,35 +682,34 @@ input[type=number] {
   color: #fff;
 }
 
-.input-login {
+.form-group {
   position: relative;
 }
-.input-login .li-user {
+.form-group .icon-person {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  font-size: 15pt;
+  color: red;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.form-group .icon-person .form-control:valid {
+  border-color: red;
+}
+.form-group .li-key {
   position: absolute;
   top: 2px;
   margin-left: 6px;
 }
-.input-login .li-user::before {
-  content: "\F2BD";
-  font-family: Fontawesome;
-  margin-right: 3px;
-  font-size: 22px;
-  color: #e74c3c;
-}
-.input-login .li-key {
-  position: absolute;
-  top: 2px;
-  margin-left: 6px;
-}
-.input-login .li-key::before {
+.form-group .li-key::before {
   content: "\F084";
   font-family: Fontawesome;
   margin-right: 3px;
   font-size: 22px;
   color: #e74c3c;
 }
-.input-login input {
-  width: 300px;
+.form-group input {
   margin-bottom: 5px;
   padding: 0.25rem 0 0.25rem 2.5rem;
   background-color: #fafafa;
@@ -1404,44 +1402,17 @@ body {
 
 .input-seach {
   position: relative;
+  z-index: 0;
 }
-.input-seach .li-briefcase {
+.input-seach .icons-home {
   position: absolute;
-  left: 13px;
-  top: 6px;
-}
-.input-seach .li-briefcase::before {
-  content: "\F0B1";
-  font-family: Fontawesome;
-  margin-right: 3px;
-  font-size: 22px;
-  color: #1c9c05;
-}
-.input-seach .li-hammer-wrench {
-  position: absolute;
-  z-index: 99;
+  z-index: 1;
   left: 15px;
-  top: 6px;
-}
-.input-seach .li-hammer-wrench::before {
-  content: "\F0AD";
-  font-family: Fontawesome;
-  margin-right: 5px;
-  font-size: 22px;
+  top: 50%;
+  font-size: 15pt;
   color: #1c9c05;
-}
-.input-seach .li-local {
-  position: absolute;
-  z-index: 99;
-  left: 15px;
-  top: 6px;
-}
-.input-seach .li-local::before {
-  content: "\F041";
-  font-family: Fontawesome;
-  margin-right: 5px;
-  font-size: 22px;
-  color: #1c9c05;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .input-seach input {
   padding: 0.6rem 0.5rem 0.6rem 2.5rem;
@@ -1655,7 +1626,7 @@ body {
   .login-page-link-loginfb {
     padding: 5px 10px;
   }
-  .input-login input {
+  .form-group input {
     width: auto;
   }
   .list-text {
@@ -1706,13 +1677,7 @@ body {
   .company-sm {
     text-align: center;
   }
-  .input-seach .li-briefcase {
-    display: none;
-  }
-  .input-seach .li-hammer-wrench {
-    display: none;
-  }
-  .input-seach .li-local {
+  .input-seach .icons-home {
     display: none;
   }
   .input-seach input {

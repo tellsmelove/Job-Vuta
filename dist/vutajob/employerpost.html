@@ -126,7 +126,7 @@
                 <div class="col-lg-4">
                     <div class="py-2">
                         <span class="form-title font-weight-bold">Mức lương</span>
-                        <div class="py-3 px-3 form-box">
+                        <div class="py-3 px-3 form-box form-check">
                             <input id="1" type="radio" name="gender" value="male"><label for="1"><span>1 - 3 Triệu</span></label><br>
                             <input id="2" type="radio" name="gender" value="male"><label for="2"><span>3 - 5 Triệu</span></label><br>
                             <input id="3" type="radio" name="gender" value="male"><label for="3"><span>5 - 7 Triệu</span></label><br>
@@ -139,7 +139,7 @@
                         <span class="form-title font-weight-bold">Ngành nghề</span>
                         <div class="p-3 form-box-filter">
                             <input id="myInput" type="text" placeholder=" Search.." class="py-2 mb-2 w-100 form-control form-control-ps">
-                            <ul id="xyz" class="nolist border p-3">
+                            <ul id="xyz" class="nolist border form-check p-3">
                                 <li>
                                     <input id="career-1" type="checkbox" class="career-check" name="gender" value="male"><label for="career-1"><span>Lập
                                         trình Mobile</span></label>
@@ -173,21 +173,6 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- <div class="py-2">
-                        <div class="border border-muted rounded">
-                            <div class="box-title form-title p-3 font-weight-bold"><b>Vị trí tuyển dụng</b></div>
-                            <input type="text" class="form-control" @keydown.tab.prevent="makeTags()" @keyup.188.18="makeTags()" v-model="InputTags">
-                            <input type="text" v-model="tagList" v-bind="defaultValue('ddasdasda,dasdadad,asdasdasdsa')">
-                            <ul id="listTag" class="nolist px-3">
-                                <li v-for="(tag, key) of tagList" :key=key>
-                                    <a href="#" class="d-inline-block" @click.prevent="removeTag(key)">
-                                        <i class="fa fa-close"></i>
-                                    </a>
-                                    <span v-text="tag" class="badge badge-success my-2 p-2"></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
                     <div class="py-2">
                         <div class="border border-muted rounded w-100">
                             <div class="box-title form-title p-3 font-weight-bold">
@@ -201,7 +186,7 @@
                     </div>
                     <div class="py-2">
                         <span class="form-title font-weight-bold">Loại hình công việc</span>
-                        <div class="p-3 form-box">
+                        <div class="p-3 form-box form-check">
                             <input id="job-1" type="checkbox" name="gender" value="male"><label for="job-1"><span>Toàn thời gian cố định</span></label><br>
                             <input id="job-2" type="checkbox" name="gender" value="male"><label for="job-2"><span>Toàn thời gian tạm thời</span></label><br>
                             <input id="job-3" type="checkbox" name="gender" value="male"><label for="job-3"><span>Bán thời gian cố định</span></label><br>
@@ -238,7 +223,7 @@
                 </div>
                 <div class="col-lg-4 py-2">
                     <span class="font-weight-bold">Bằng cấp</span>
-                    <div class="input-seach w-100">
+                    <div class="input-seach w-100 input-group">
                         <select class="input-select pl-0 input-seach selectpicker w-100 form-control p-0 form-control-ps">
                             <option value="audi" selected disabled>Chọn</option>
                             
@@ -259,7 +244,7 @@
                 </div>
                 <div class="col-lg-4 py-2">
                     <span class="font-weight-bold">Giới tính</span>
-                    <div class="input-seach w-100">
+                    <div class="input-seach w-100 input-group">
                         <select class="input-select pl-0 input-seach selectpicker w-100 form-control p-0 form-control-ps">
                             <option value="audi" selected disabled>Chọn</option>
                             
@@ -280,7 +265,7 @@
                 </div>
                 <div class="col-lg-4 py-2">
                     <span class="font-weight-bold">Ngôn ngữ hồ sơ</span>
-                    <div class="input-seach w-100">
+                    <div class="input-seach w-100 input-group">
                         <select class="input-select pl-0 input-seach selectpicker w-100 form-control p-0 form-control-ps">
                             <option value="audi" selected disabled>Chọn</option>
                             
@@ -301,7 +286,7 @@
                 </div>
                 <div class="col-lg-4 py-2">
                     <span class="form-title font-weight-bold">Địa điểm làm việc</span>
-                    <div class="input-seach w-100">
+                    <div class="input-seach w-100 input-group">
                         <select class="input-select pl-0 input-seach selectpicker w-100 form-control p-0 form-control-ps">
                             <option value="audi" selected disabled>Địa điểm</option>
                             

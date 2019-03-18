@@ -60,7 +60,6 @@
         color: #fff;
         font-weight: bold;
         padding: 6px 51px;
-        width: 200px;
         border-radius: 4px;
         &:hover {
             background-color: #1f3a8a;
@@ -72,18 +71,17 @@
     }
     
 }
-.input-login {
+.form-group {
     position: relative;
-    .li-user {
+    .icon-person {
         position: absolute;
-        top: 2px;
-        margin-left: 6px;
-        &::before {
-            content: '\f2bd';
-            font-family: Fontawesome;
-            margin-right: 3px;
-            font-size: 22px;
-            color: #e74c3c;
+        left: 15px;
+        top: 50%;
+        font-size: 15pt;
+        color: red;
+        transform: translateY(-50%);
+        .form-control:valid{
+            border-color: red;
         }
     }
     .li-key {
@@ -99,7 +97,6 @@
         }
     }
     input {
-        width: 300px;
         margin-bottom: 5px;
         padding: 0.25rem 0 0.25rem 2.5rem;
         background-color: #fafafa;

@@ -152,53 +152,20 @@ body{
 }
 .input-seach {
     position: relative;
-    .li-briefcase {
+    z-index: 0;
+    .icons-home {
         position: absolute;
-        left: 13px;
-        top: 6px;
-        &::before {
-            content: '\f0b1';
-            font-family: Fontawesome;
-            margin-right: 3px;
-            font-size: 22px;
-            color: #1c9c05;
-        }
-        @include max-sm {
-            display: none;
-        }
-    }
-    .li-hammer-wrench {
-        position: absolute;
-        z-index: 99;
+        z-index: 1;
         left: 15px;
-        top: 6px;
-        &::before {
-            content: '\f0ad';
-            font-family: Fontawesome;
-            margin-right: 5px;
-            font-size: 22px;
-            color: #1c9c05;
-        }
+        top: 50%;
+        font-size: 15pt;
+        color: #1c9c05;
+        transform: translateY(-50%);
         @include max-sm {
             display: none;
         }
     }
-    .li-local {
-        position: absolute;
-        z-index: 99;
-        left: 15px;
-        top: 6px;
-        &::before {
-            content: '\f041';
-            font-family: Fontawesome;
-            margin-right: 5px;
-            font-size: 22px;
-            color: #1c9c05;
-        }
-        @include max-sm {
-            display: none;
-        }
-    }
+    
     input {
         padding: 0.6rem 0.5rem 0.6rem 2.5rem;
         @include max-sm {
