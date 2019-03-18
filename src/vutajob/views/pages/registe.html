@@ -3,93 +3,62 @@
 {% block title %}Registe{% endblock %}
 
 {% block content %}
-<section class="login-page registe-page">
+<section class="registe-page py-lg-5 py-md-4 py-3">
     <div class="container">
-        <div class="d-flex flex-wrap flex-row">
-            <div class="col-lg-12 registe-page-boxright text-center mb-3 py-3">
-                <div class="mx-2">
-                    <a href="#"><img src="{{img('logo.png')}}" alt=""> </a>
-                </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3 registe-page-boxright boxshadow text-center mb-3 py-3">
                 <div class="my-2">
-                    <span class="registe-page-title">Đăng ký ứng viên</span>
+                    <h3 class="registe-page-title text-light">Đăng ký ứng viên</h3>
                 </div>
-               
-                <div class="row justify-content-center">
+
+                <div class="row justify-content-center py-3">
                     <div class="col-lg-12 my-2">
-                        <div class="col text-left">
+                        <div class="text-left">
                             <span class="form-title">Họ tên:</span>
                         </div>
-                        <div class="col-lg-12 p-0 px-md-3">
+                        <div class="col-lg-12 p-0">
                             <input class="form-control form-control-lg" type="number" autocomplete="off" placeholder="Vui lòng nhập họ tên">
                         </div>
                     </div>
                     <div class="col-lg-6 my-2">
-                        <div class="col text-left">
+                        <div class="text-left">
                             <span class="form-title">Địa chỉ email:</span>
                         </div>
-                        <div class="col-lg-12 p-0 px-md-3">
+                        <div class="col-lg-12 p-0">
                             <input class="form-control form-control-lg" type="email" autocomplete="off" placeholder="Nhập địa chỉ email">
                         </div>
                     </div>
                     <div class="col-lg-6 my-2">
-                        <div class="col text-left">
+                        <div class="text-left">
                             <span class="form-title">Số điện thoại:</span>
                         </div>
-                        <div class="col-lg-12 p-0 px-md-3">
+                        <div class="col-lg-12 p-0">
                             <input class="form-control form-control-lg" type="email" autocomplete="off" placeholder="Nhập số điện thoại...">
                         </div>
                     </div>
                     <div class="col-lg-6 my-2">
-                        <div class="col text-left">
+                        <div class="text-left">
                             <span>Nhập Chứng minh nhân dân:</span>
                         </div>
-                        <div class="col-lg-12 p-0 px-md-3">
+                        <div class="col-lg-12 p-0">
                             <input class="form-control form-control-lg" type="email" autocomplete="off" placeholder="Vd: 273555999">
                         </div>
                     </div>
                     <div class="col-lg-6 my-2">
-                        <div class="col text-left">
+                        <div class="text-left">
                             <span>Chỗ ở hiện tại:</span>
                         </div>
-                        <div class="col-lg-12 p-0 px-md-3">
+                        <div class="col-lg-12 p-0">
                             <input class="form-control form-control-lg" type="number" autocomplete="off" placeholder="Nhập chỗ ở hiện tại...">
                         </div>
                     </div>
-                    <!-- <div class="col-lg-6 my-2">
-                        <div class="col text-left">
-                            <span>Kỹ năng:</span>
-                        </div>
-                        <div class="col-lg-12 p-0 px-md-3">
-                            <textarea rows="2" cols="20" class="w-100"></textarea>
-                        </div>
+                    <div class="text-left col-lg-12">
+                        <span class="form-title">ghi chú:</span>
+                        <textarea class="form-control" row="3"></textarea>
                     </div>
-                    <div class="col-lg-6 my-2">
-                        <div class="col text-left">
-                            <span>Thành tích:</span>
-                        </div>
-                        <div class="col-lg-12 p-0 px-md-3">
-                            <textarea rows="2" cols="20" class="w-100"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 my-2">
-                        <div class="col text-left">
-                            <span>Trình độ học vấn:</span>
-                        </div>
-                        <div class="col-lg-12 p-0 px-md-3">
-                            <textarea rows="3" cols="20" class="w-100"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 my-2">
-                        <div class="col text-left">
-                            <span>Giải thưởng:</span>
-                        </div>
-                        <div class="col-lg-12 p-0 px-md-3">
-                            <textarea rows="3" cols="20" class="w-100"></textarea>
-                        </div>
-                    </div> -->
                 </div>
                 <div class="mt-3">
-                    <a href="#" class="registe-page-link-login">Đăng ký</a>
+                    <button type="submit" class="registe-page-link-login">Đăng ký</button>
                 </div>
                 <div class="mt-2">
                     <span class="text-opacity">Quên mật khẩu</span>
@@ -97,6 +66,8 @@
                 <div class="row text-center justify-content-center py-2">
                     <p>Bạn đã có tài khoản? <a href="#">Đăng nhập</a></p>
                 </div>
+
+
             </div>
         </div>
     </div>

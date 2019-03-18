@@ -3,9 +3,9 @@
 {% block title %}post-employer{% endblock %}
 
 {% block content %}
-<section class="bg-light py-3">
+<section class="bg-light py-lg-5 py-md-4 py-3">
     <div class="container bg-white rounded">
-        <form>
+        <form action="" method="post">
             <h3 class="title-box">THÔNG TIN CÔNG VIỆC</h3>
             <div class="row pb-3">
                 <div class="col-lg-8">
@@ -112,6 +112,17 @@
                         </div>
                     </div> -->
                     <div class="py-2">
+                        <div class="border border-muted rounded w-100">
+                            <div class="box-title form-title p-3 font-weight-bold">
+                                <b>Vị trí tuyển dụng</b><br>
+                                <small class="text-muted">Nhập text sau đó (,) hoặc Enter để tạo tag</small>
+                            </div>
+                            <input id="tags-input" type="text" class="form-control w-100 form-tags" data-role="tagsinput">
+
+                        </div>
+
+                    </div>
+                    <div class="py-2">
                         <span class="form-title font-weight-bold">Loại hình công việc</span>
                         <div class="p-3 form-box">
                             <input id="job-1" type="checkbox" name="gender" value="male"><label for="job-1"><span>Toàn thời gian cố định</span></label><br>
@@ -213,8 +224,8 @@
                     <input type="text" class="form-control form-control-pd" placeholder="+84">
                 </div>
                 <div class="col-lg-12 text-right py-4">
-                    <a href="#" class="link-lose-form">Bỏ qua</a>
-                    <a href="#" class="link-post-form">Đăng tuyển dụng</a>
+                    <button type="text" class="link-lose-form">Bỏ qua</button>
+                    <button type="submit" class="link-post-form">Đăng tuyển dụng</button>
                 </div>
             </div>
         </form>

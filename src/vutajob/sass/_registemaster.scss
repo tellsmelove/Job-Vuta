@@ -1,21 +1,13 @@
 .regis-master-page {
-    background-color: #55c304;
-    padding-top: 2rem;
+
     &-title {
          color: #c0392b;
     }
     &-boxleft {
         background-color: #fff;
-        a {
-            color: #55c304;
+        li {
             font-size: 15pt;
             line-height: 2;
-            &::before {
-                content: '\f058';
-                font-family: Fontawesome;
-                margin-right: 5px;
-                font-size: 16px;
-            }
         }
     }
     &-boxright {
@@ -48,9 +40,9 @@
         background-color: #ff5341;
         color: #fff;
         font-weight: bold;
-        padding: 6px 107px;
-        width: 200px;
+        padding: 6px 25px;
         border-radius: 4px;
+        border: none;
         &:hover {
             background-color: #c0392b;
             color: #fff;
@@ -65,7 +57,6 @@
         color: #fff;
         font-weight: bold;
         padding: 6px 51px;
-        width: 200px;
         border-radius: 4px;
         &:hover {
             background-color: #1f3a8a;
@@ -128,7 +119,7 @@
     }
 }
 .hotline {
-    background-color: #55c304;
+    background-color: #19800e;
     color: #fff;
     font-weight: bold;
     font-size: 15pt;
@@ -142,4 +133,8 @@
         padding: 5px 10px;
         background-color: #fff;
     }
+}
+.hotline-phone {
+    font-size: 17pt;
+    color: #f00;
 }

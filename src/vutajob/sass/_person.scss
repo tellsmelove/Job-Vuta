@@ -23,12 +23,13 @@
 }
 .person{
    &-tags{
-        background-color:#218210;
+       display: inline-block;
+        background-color:#07bda6;
         color: #fff;
         padding: 2px 6px;
         border-radius: 4px;
         margin: 4px;
-        font-size: 11pt;
+        font-size: 13pt;
         font-weight: bold;
         &:hover {
             background-color: rgba(#e74c3c, .7);

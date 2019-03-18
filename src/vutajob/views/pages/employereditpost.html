@@ -3,7 +3,7 @@
 {% block title %}edit-post-employer{% endblock %}
 
 {% block content %}
-<section class="bg-light py-3">
+<section class="bg-light py-lg-5 py-md-4 py-3">
     <div class="container bg-white rounded">
         <form>
             <h3 class="title-box">THÔNG TIN CÔNG VIỆC</h3>
@@ -104,21 +104,6 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- <div class="py-2">
-                        <div class="border border-muted rounded">
-                            <div class="box-title form-title p-3 font-weight-bold"><b>Vị trí tuyển dụng</b></div>
-                            <input type="text" class="form-control" @keydown.tab.prevent="makeTags()" @keyup.188.18="makeTags()" v-model="InputTags">
-                            <input type="text" v-model="tagList" v-bind="defaultValue('ddasdasda,dasdadad,asdasdasdsa')">
-                            <ul id="listTag" class="nolist px-3">
-                                <li v-for="(tag, key) of tagList" :key=key>
-                                    <a href="#" class="d-inline-block" @click.prevent="removeTag(key)">
-                                        <i class="fa fa-close"></i>
-                                    </a>
-                                    <span v-text="tag" class="badge badge-success my-2 p-2"></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
                     <div class="py-2">
                         <span class="form-title font-weight-bold">Loại hình công việc</span>
                         <div class="p-3 form-box">

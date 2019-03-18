@@ -1,6 +1,4 @@
 .login-page {
-    background-color: #55c304;
-    min-height: 60vh;
     padding-top: 2rem;
     &-title {
         color: #55c304;
@@ -14,8 +12,8 @@
     }
     &-boxleft {
         background-color: #fff;
-        a {
-            color: #55c304;
+        li {
+            // color: #55c304;
             font-size: 15pt;
             line-height: 2;
             &::before {
@@ -46,9 +44,9 @@
         background-color: #ff5341;
         color: #fff;
         font-weight: bold;
-        padding: 6px 107px;
-        width: 200px;
+        padding: 6px 20px;
         border-radius: 4px;
+        border: none;
         &:hover {
             background-color: #c0392b;
             color: #fff;
